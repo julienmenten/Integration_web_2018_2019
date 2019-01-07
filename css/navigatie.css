@@ -1,0 +1,73 @@
+body{
+	/*Zorgt ervoor dat er geen witte randen zitten aan de kant van de website*/
+	margin: 0;
+}
+nav{
+	overflow: hidden;
+	border-bottom: 0.5px solid #FF7B00;
+	width: 100%;
+	margin: auto;
+	max-height: 60px;
+}
+#logoNav{
+	margin-left: 5%;
+	margin-top: 5px;
+}
+/***********************************
+* Logo en naam naast elkaar zetten *
+***********************************/
+#logoTableFix{
+	max-height: 60px;
+}
+#logoNav img,
+#logoNav h1{
+	display: table-cell;	
+}
+/***********************************
+*			 Logo style 		   *
+***********************************/
+#logoNav img{
+	height: 50px;	
+	margin: 0;
+}
+/***********************************
+*			 naam style 		   *
+***********************************/
+#logoNav h1{
+	padding: 0 0 0 20px;
+	vertical-align: middle;
+	font-weight: 100;
+}
+
+#logoNav a{
+	text-decoration: none;
+	color: black;
+	display: table;
+}
+/********************************************
+* Logo/naam en pagina's naast elkaar zetten *
+********************************************/
+#paginas,
+#logoNav{
+	display: inline-block;
+}
+#paginas {
+	float: right;
+	margin-right: 5%;
+}
+#paginas ul{
+	list-style-type: none;
+	padding: 0;
+}
+#paginas li{
+	display: inline-block;
+	vertical-align: middle;
+}
+#paginas li a{
+	text-decoration: none;
+	color: black;
+	padding: 0px 20px;
+}
+#paginas li img{
+	height: 30px;
+}
