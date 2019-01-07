@@ -1,6 +1,13 @@
+@import "navigatie.css";
+@import "general.css";
+
 #filter{
 	width: 100%;
 	height: 60px;
 	background-color: #FF7B00;
 }
 
+.select-style{
+	
+	border-radius: 0;
+}

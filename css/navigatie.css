@@ -1,3 +1,4 @@
+@import "general.css";
 body{
 	/*Zorgt ervoor dat er geen witte randen zitten aan de kant van de website*/
 	margin: 0;
@@ -8,6 +9,7 @@ nav{
 	width: 100%;
 	margin: auto;
 	max-height: 60px;
+	font-family: 'Open sans';
 }
 #logoNav{
 	margin-left: 5%;
@@ -54,10 +56,12 @@ nav{
 #paginas {
 	float: right;
 	margin-right: 5%;
+	max-height: 60px;
 }
 #paginas ul{
 	list-style-type: none;
 	padding: 0;
+	max-height: 60px;
 }
 #paginas li{
 	display: inline-block;
