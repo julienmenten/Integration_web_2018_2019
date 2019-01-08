@@ -29,10 +29,32 @@
         </nav>
     </header>
 
-
     <div class="fotoshome">
-        <img src="images/homepagebackground.jpg" style="height: 131.6vh">
+       <div class="slide fade">
+        <img src="images/homepagebackground.jpg">
+        </div>
+        <div class="slide fade">
+        <img src="images/Sint-Gerardus_oogbesturing-2.jpg">
+        </div>
     </div>
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() { /*based on W3Schools: https://www.w3schools.com/w3css/w3css_slideshow.asp*/
+            var i;
+            var x = document.getElementsByClassName("slide");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+                slideIndex = 1
+            }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 6000); // Change image every 6 seconds
+        }
+    </script>
     <div class="backgroundhome">
         <div class="backgroundfilter">
             <main class="grid">
