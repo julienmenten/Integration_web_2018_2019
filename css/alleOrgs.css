@@ -5,9 +5,90 @@
 	width: 100%;
 	height: 60px;
 	background-color: #FF7B00;
+	margin-bottom: 50px;
+	display: flex;
+}
+.filter-container{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	
 }
 
 .select-style{
-	
 	border-radius: 0;
+	padding: 5px;
+	border:3px double #FF7B00;
+}
+
+#filterBevestiging{ 
+	background-color: white;
+	border: 3px double #FF7B00;
+}
+
+#orgs_banner{
+	width: 100%;
+	grid-column: col 1/span 12;
+	height: 480px;
+	background: url("../images/org_banner.jpg");
+	background-position: center ;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+.orgs_banner_tekst{
+	background-color: rgba(255,255,255,0.80);	
+}
+.orgs_banner_tekst h2{
+	margin: auto;
+	width: 100%;
+	padding: 25px 0px;
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+}
+.orgs_banner_tekst p{
+	width: 50%;
+	margin: auto;
+	font-size: 14px;
+	text-align: justify;
+	padding-bottom: 30px;
+}
+#orgs_lijst{
+	grid-column: col 3/ span 8;
+	
+}
+.organisatie{
+	display: inline-flex;
+}
+.organisatie .org_buttons{
+	display: block;
+	
+}
+.organisatie .org_tekst{
+	margin-left: 40px;
+	
+}
+.organisatie img{
+
+}
+
+@media only screen and (max-width:1080px){
+	.orgs_banner_tekst p{
+		width: 70%;
+	
+	}
+}
+@media only screen and (max-width:680px){
+	.orgs_banner_tekst h2{
+		padding: 25px 0px;
+		font-size: 1.4rem;
+	}
+	.orgs_banner_tekst p{
+		width: 90%;
+	
+	}
 }
