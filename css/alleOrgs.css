@@ -57,31 +57,105 @@
 	text-align: justify;
 	padding-bottom: 30px;
 }
-#orgs_lijst{
-	grid-column: col 3/ span 8;
-	
+.org_titel{
+	grid-column: col 2 /span 10;
 }
+
+#orgs_lijst {
+	grid-column: col 2/ span 10;
+}
+
 .organisatie{
 	display: inline-flex;
+	width: 77%;
+	margin-bottom: 50px;
+}
+
+.organisatie:nth-child(2n+0){
+	float: right;
 }
 .organisatie .org_buttons{
 	display: block;
-	
+	float: right;
 }
-.organisatie .org_tekst{
-	margin-left: 40px;
-	
-}
-.organisatie img{
 
+.org_buttons{
+	vertical-align: top;
 }
+
+.org_buttons a{
+	text-decoration: none;
+	color: white;
+	background-color: #FF7B00;
+	border: 0;
+	font-size: 16px;
+	margin: 0px 15px;
+	padding: 3px 10px;
+	transition: 0.2s;
+}
+.org_buttons a:hover{
+	background-color: #FFC181;
+	transition: 0.2s;
+}
+.org_buttons span{
+	padding-left: 30px;
+	vertical-align: 1px;
+}
+
+.org_tekst{
+	margin-left: 40px;
+	vertical-align: middle;
+}
+
+
+@media only screen and (max-width:1150px){
+	#orgs_lijst {
+		grid-column: col 2/ span 11;
+	}
+	.organisatie{
+		margin-bottom: 50px;
+		width: 100%;
+	}
+	.organisatie:nth-child(2n+0){
+		float: left;
+	}
+	
+}
+@media only screen and (max-width:880px){
+	#orgs_lijst {
+		grid-column: col 1/ span 12;
+	}
+}
+
 
 @media only screen and (max-width:1080px){
 	.orgs_banner_tekst p{
-		width: 70%;
-	
+		width: 70%;	
+	}
+	.organisatie{
+		float: left;
 	}
 }
+
+@media only screen and (max-width:730px){
+	.org_titel{
+		text-align: center;
+	}
+
+	.organisatie{
+		display: block;
+	}
+	.organisatie img{
+		width: 100%;
+	}
+	.org_tekst{
+		display: block;
+		width: 92%;
+		margin-left: 0;
+		margin:auto;
+	}
+}
+
 @media only screen and (max-width:680px){
 	.orgs_banner_tekst h2{
 		padding: 25px 0px;
@@ -89,6 +163,5 @@
 	}
 	.orgs_banner_tekst p{
 		width: 90%;
-	
 	}
 }
