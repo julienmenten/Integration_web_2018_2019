@@ -1,0 +1,34 @@
+.beperkingen {
+    position: absolute;
+}
+
+.beperkingen img {
+    width: 72px;
+    height: 72px;
+}
+
+.beperkingen a {
+    color: white;
+}
+
+.background {
+    margin: 0;
+    background-image: url(../images/homepagebackground.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.visuelebegeleiding {
+    display: inline-block;
+    grid-column: col 2/ span 4;
+}
+
+.auditievebegeleiding {
+    display: inline-block;
+    grid-column: col 5/ span 4;
+}
+
+.motorischebegeleiding {
+    display: inline-block;
+    grid-column: col 8/ span 4;
+}
