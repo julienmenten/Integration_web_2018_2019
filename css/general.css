@@ -19,17 +19,15 @@ h6 {
     text-decoration: none;
 }
 
-p {
+p,
+td {
     font-weight: 300;
     color: #000;
 }
 
 /*grid*/
-.grid {
-    display: grid;
-    grid-template-columns: repeat(12, [col] 1fr);
-    grid-column-gap: 2%;
-}
-main{
-    border: 0% 4% 0% 4%;
-}
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(12, [col] 1fr);
+        grid-column-gap: 2%;
+    }
