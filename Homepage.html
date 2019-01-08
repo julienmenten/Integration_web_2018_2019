@@ -29,25 +29,55 @@
         </nav>
     </header>
 
-    <div class="background">
-        <main>
-            <ul class="beperkingen">
-                <div class="grid">
-                    <li class="visuelebegeleiding">
+    <div class="fotoshome">
+       <div class="slide fade">
+        <img src="images/homepagebackground.jpg">
+        </div>
+        <div class="slide fade">
+        <img src="images/Sint-Gerardus_oogbesturing-2.jpg">
+        </div>
+    </div>
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() { /*based on W3Schools: https://www.w3schools.com/w3css/w3css_slideshow.asp*/
+            var i;
+            var x = document.getElementsByClassName("slide");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+                slideIndex = 1
+            }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 6000); // Change image every 6 seconds
+        }
+    </script>
+    <div class="backgroundhome">
+        <div class="backgroundfilter">
+            <main class="grid">
+                <div class="visuelebegeleiding">
+                    <a href="">
                         <img src="images/Asset%201.svg" alt="oog">
-                        <a href="homepage.html">Visuele begeleiding</a>
-                    </li>
-                    <li class="auditievebegeleiding">
-                        <img src="images/oor.svg" alt="oog">
-                        <a href="homepage.html">Auditieve begeleiding</a>
-                    </li>
-                    <li class="motorischebegeleiding">
-                        <img src="images/rolstoel.svg" alt="oog">
-                        <a href="homepage.html">Motorische begeleiding</a>
-                    </li>
+                        <h4>Visuele begeleiding</h4>
+                    </a>
                 </div>
-            </ul>
-        </main>
+                <div class="auditievebegeleiding">
+                    <a href="">
+                        <img src="images/oor.svg" alt="oor">
+                        <h4>Auditieve begeleiding</h4>
+                    </a>
+                </div>
+                <div class="motorischebegeleiding">
+                    <a href="">
+                        <img src="images/rolstoel.svg" alt="rolstoel">
+                        <h4>Motorische begeleiding</h4>
+                    </a>
+                </div>
+            </main>
+        </div>
     </div>
 </body>
 
