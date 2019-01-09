@@ -16,6 +16,7 @@ p, h2{
 }
 h2{
     font-weight: 400;
+    display: inline-block;
 }
 
 #container{
@@ -47,7 +48,9 @@ h2{
     visibility: visible;
     margin-bottom: 0;
 }
-
+#accordion1:checked + label  .arrow {
+    transform: rotate(180deg);
+}
 #accordion1{
     display: none;
     position: relative;
@@ -100,6 +103,17 @@ h2{
     display: none;
     position: relative;
 }
+.arrow{
+    background-image: url(images/ARROWS_FAQ-01.svg);
+    background-size: cover;
+    background-position: 0px 3.1px;
+    width: 30px;
+    height: 30px;
+    float: right;
+    display: inline-block;
+    margin-top: 1%;
+}
+
 
 
 /*FOOTER*/
