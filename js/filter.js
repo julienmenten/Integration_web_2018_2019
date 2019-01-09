@@ -35,3 +35,35 @@ Lijst van mogelijke waarden:
 	- v-brabant
 	- w-vlaanderen
 */
+
+// Sticky filter 
+var num = 60;
+
+$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > num) {
+        $('#filter').addClass('sticky');
+		$('.grid').css("padding-top","120px");
+    } else {
+        $('#filter').removeClass('sticky');
+		$('.grid').css("padding-top","00px");
+    }
+});
+
+// Mobile versie van de filter balk
+$("#mobileFilter").click(function(){
+	$('.filter-container').slideToggle().toggleClass('mobileFilterToggle');
+	
+});
+// Fix voor het verdwijnen van de filter balk bij resize van schermbreedte
+$(window).on('resize', function(){
+	if($(this).width() <= 1193){
+		
+		$(".filter-container").addClass('mobileFilterToggle');
+		$(".filter-container").css("display","none");
+	};
+	if($(this).width() >= 1193){
+		$(".filter-container").removeClass('mobileFilterToggle');
+		$(".filter-container").css("display","block");
+	};
+});
+
