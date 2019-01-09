@@ -22,7 +22,6 @@ tabel {
 /*logo*/
 #logo {
     padding: 0;
-    margin: 2em 0em 0em 0em;
 }
 
 /*map* css en html op https://www.embedgooglemap.net/*/
@@ -52,7 +51,7 @@ tabel {
 
 #slideshow {
     width: 100%;
-    margin: 2em 0em 0em 0em;
+    margin: 0;
 }
 
 /*place on grid*/

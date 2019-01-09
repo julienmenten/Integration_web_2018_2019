@@ -20,7 +20,7 @@ h6 {
 }
 
 p,
-td {
+td,a {
     font-weight: 300;
     color: #000;
 }

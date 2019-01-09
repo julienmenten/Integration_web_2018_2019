@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>detail-organisatie-Sint-gerardus</title>
+    <link rel="stylesheet" type="text/css" href="../css/general.css">
+    <link rel="stylesheet" type="text/css" href="../css/detail-organisatie-template.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logoNav">
+                <div id="logoTableFix">
+                    <a href="#">
+                        <img src="../images/logo.svg" alt="logo van ZorgOrganisatie Netwerk">
+                        <h1>ZorgOrganisaties Netwerk</h1>
+                    </a>
+                </div>
+            </div>
+            <div id="paginas">
+                <ul>
+                    <li><a href="">wie zijn wij</a></li>
+                    <li><a href="">onze organisaties</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li class="hoogContrastKnop"><img src="../images/logo hoog contrast.svg" alt="Hoog contrast knop"></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="grid">
+        <figure id="logo"><img src="logos_organisaties/Logo_SG_def_bsl_felrood%20(1).jpg" alt="logo" width=100%></figure>
+        <div id="slideshow">
+            <img src="fotos-sint_gerardus/Sint-Gerardus_oogbesturing-2.jpg" alt="kind-oogbesturing" width=100% class="slide">
+            <script>
+                var slideIndex = 0;
+                carousel();
+
+                function carousel() { /*based on W3Schools: https://www.w3schools.com/w3css/w3css_slideshow.asp*/
+                    var i;
+                    var x = document.getElementsByClassName("slide");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > x.length) {
+                        slideIndex = 1
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                    setTimeout(carousel, 3000); // Change image every 3 seconds
+                }
+            </script>
+        </div>
+        <div id="info">
+            <h6>Dienstencentrum Sint-gerardus
+            </h6>
+            <table>
+                <tr>
+                    <td>begeleiding voor:</td>
+                    <td>motorische beperkingen</td>
+                </tr>
+                <tr>
+                    <td>leeftijd:</td>
+                    <td>kinderen,jongeren en volwassenen</td>
+                </tr>
+                <tr>
+                    <td>website:</td>
+                    <td><a href="http://sintgerardus.be/">www.sintgerardus.be</a></td>
+                </tr>
+                <tr>
+                    <td>e-mail:</td>
+                    <td><a href="mailto:ouki@sintgerardus.be">ouki@sintgerardus.be</a></td>
+                </tr>
+                <tr>
+                    <td>tel.:</td>
+                    <td><a href="telto:011350100">011/350 100</a></td>
+                </tr>
+                <tr>
+                    <td>adres:</td>
+                    <td>sint-gerardusdreef 1,<br>3590 Diepenbeek</td>
+                </tr>
+            </table>
+        </div>
+        <div class="mapouter" id="map-desktop">
+            <div class="gmap_canvas"><iframe width="600" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=sint-gerardusdreef%201%2C%203590%20diepenbeek&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de"></a></div>
+        </div>
+        <div class="mapouter" id="map-tablet">
+            <div class="gmap_canvas"><iframe width="1000" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=sint-gerardusdreef%201%2C%203590%20diepenbeek&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de"></a></div>
+        </div>
+        <div class="mapouter" id="map-mobile">
+            <div class="gmap_canvas"><iframe width="670" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=sint-gerardusdreef%201%2C%203590%20diepenbeek&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de"></a></div>
+        </div>
+    </main>
+</body>
+</html>
