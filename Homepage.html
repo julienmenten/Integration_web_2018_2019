@@ -9,29 +9,36 @@
 </head>
 
 <body scroll="no">
-    <nav>
-        <div id="logoNav">
-            <div id="logoTableFix">
-                <a href="Homepage.html">
-                    <img src="images/logo.svg" alt="logo van ZorgOrganisatie Netwerk">
-                    <h1>ZorgOrganisaties Netwerk</h1>
-                </a>
+    <header>
+        <!-- Navigatie-->
+        <nav>
+            <!-- Logo en naam -->
+            <div id="logoNav">
+                <div id="logoTableFix">
+                    <a href="Homepage.html">
+                        <img src="images/logo.svg" alt="logo van ZorgOrganisatie Netwerk">
+                        <h1>ZorgOrganisaties Netwerk</h1>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div id="paginas">
-            <ul id="mobileNav">
-                <li><a href="">wie zijn wij</a></li>
-                <li><a href="#">onze organisaties</a></li>
-                <li><a href="">FAQ</a></li>
-            </ul>
-            <div class="hoogContrastKnop"><img src="images/logo hoog contrast.svg" alt="Hoog contrast knop"></div>
-            <div id="mobileMenuIcon">
-                <div class="mobileIconLijn1"></div>
-                <div class="mobileIconLijn2"></div>
-                <div class="mobileIconLijn3"></div>
+            <div id="paginas">
+                <ul id="mobileNav">
+                    <!-- Links naar pagina's-->
+                    <li><a href="wie-zijn-wij.html">wie zijn wij</a></li>
+                    <li><a href="centra.html">onze organisaties</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                </ul>
+                <!-- Hoogcontrastknop -->
+                <div class="hoogContrastKnop"><img src="images/logo hoog contrast.svg" alt="Hoog contrast knop"></div>
+                <!-- Mobile navigatie icoon -->
+                <div id="mobileMenuIcon">
+                    <div class="mobileIconLijn1"></div>
+                    <div class="mobileIconLijn2"></div>
+                    <div class="mobileIconLijn3"></div>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <div class="fotoshome">
         <img src="images/homepagebackground.jpg" class="slide">
@@ -54,7 +61,6 @@
             x[slideIndex - 1].style.display = "block";
             setTimeout(carousel, 6000); // Change image every 6 seconds
         }
-
     </script>
     <div class="backgroundhome">
         <div class="backgroundfilter">
@@ -80,6 +86,13 @@
             </main>
         </div>
     </div>
+    <!-- Script(s) (ingeladen NA HTML en CSS!)-->
+    <!-- Inladen van jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- jQuery code voor responsieve navigatie -->
+    <script type="text/javascript" src="js/mobileNav.js"></script>
+    <!-- jQuery code voor filtering systeem van de organisaties -->
+    <script type="text/javascript" src="js/filter.js"></script>
 </body>
 
 </html>
