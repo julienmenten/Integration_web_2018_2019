@@ -1,34 +1,58 @@
-.beperkingen {
-    position: absolute;
+.fotoshome img {
+    width: 100%;
 }
 
-.beperkingen img {
-    width: 72px;
-    height: 72px;
+.slide img {
+    max-height: 100vh;
+    margin-bottom: 0;
 }
 
-.beperkingen a {
+.backgroundhome h4 {
     color: white;
+    display: table-cell;
+    padding: 0 0 0 20px;
+    vertical-align: middle;
+    padding-left: 7px;
 }
 
-.background {
-    margin: 0;
-    background-image: url(../images/homepagebackground.jpg);
-    height: 100vh;
-    background-size: cover;
+.backgroundhome a {
+    text-decoration: none;
+    color: black;
+    display: table;
+    margin-top: 10%;
+}
+
+.backgroundhome img {
+    width: 76px;
+    height: 76px;
 }
 
 .visuelebegeleiding {
     display: inline-block;
-    grid-column: col 2/ span 4;
+    vertical-align: middle;
+    grid-column: col 3/ span 3;
 }
 
 .auditievebegeleiding {
     display: inline-block;
-    grid-column: col 5/ span 4;
+    vertical-align: middle;
+    grid-column: col 6/ span 3;
 }
 
 .motorischebegeleiding {
     display: inline-block;
-    grid-column: col 8/ span 4;
+    vertical-align: middle;
+    grid-column: col 9/ span 3;
 }
+
+.backgroundfilter {
+    position: absolute;
+    top: 0;
+    margin-top: 32%;
+    width: 100%;
+    height: 20%;
+    background-color: #ff7b00;
+    opacity: .9;
+}
+
+@media
