@@ -2,40 +2,40 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Homepage</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
-<body>
-    <header>
-        <nav>
-            <div id="logoNav">
-                <div id="logoTableFix">
-                    <a href="#">
-                        <img src="images/logo.svg" alt="logo van ZorgOrganisatie Netwerk">
-                        <h1>ZorgOrganisaties Netwerk</h1>
-                    </a>
-                </div>
+<body scroll="no">
+    <nav>
+        <div id="logoNav">
+            <div id="logoTableFix">
+                <a href="Homepage.html">
+                    <img src="images/logo.svg" alt="logo van ZorgOrganisatie Netwerk">
+                    <h1>ZorgOrganisaties Netwerk</h1>
+                </a>
             </div>
-            <div id="paginas">
-                <ul>
-                    <li><a href="">wie zijn wij</a></li>
-                    <li><a href="centra.html">onze organisaties</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li class="hoogContrastKnop"><img src="images/logo hoog contrast.svg" alt="Hoog contrast knop"></li>
-                </ul>
+        </div>
+        <div id="paginas">
+            <ul id="mobileNav">
+                <li><a href="">wie zijn wij</a></li>
+                <li><a href="#">onze organisaties</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+            <div class="hoogContrastKnop"><img src="images/logo hoog contrast.svg" alt="Hoog contrast knop"></div>
+            <div id="mobileMenuIcon">
+                <div class="mobileIconLijn1"></div>
+                <div class="mobileIconLijn2"></div>
+                <div class="mobileIconLijn3"></div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <div class="fotoshome">
-        <div class="slide">
-            <img src="images/homepagebackground.jpg">
-        </div>
-        <div class="slide">
-            <img src="images/homepagebackground2.jpg">
-        </div>
+        <img src="images/homepagebackground.jpg" class="slide">
+        <img src="images/homepagebackground2.jpg" class="slide">
     </div>
     <script>
         var slideIndex = 0;
@@ -54,6 +54,7 @@
             x[slideIndex - 1].style.display = "block";
             setTimeout(carousel, 6000); // Change image every 6 seconds
         }
+
     </script>
     <div class="backgroundhome">
         <div class="backgroundfilter">
