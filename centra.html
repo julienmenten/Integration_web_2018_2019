@@ -2,60 +2,129 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>ZON - alle organisaties</title>
-		<link rel="stylesheet" href="css/navigatie.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>ZON - alle organisaties</title>		
 		<link rel="stylesheet" href="css/alleOrgs.css">
-		<link rel="stylesheet" href="css/general.css">
+		
+		<!-- Scripts -->
+		
 	</head>
 	<body>
 		<header>
 			<nav>	
 				<div id="logoNav">
 					<div id="logoTableFix">
-						<a href="#">
+						<a href="Homepage.html">
 							<img src="images/logo.svg" alt="logo van ZorgOrganisatie Netwerk">
 							<h1>ZorgOrganisaties Netwerk</h1>
 						</a>
 					</div>
 				</div>
-				<div id="paginas">
-				<ul>
-					<li><a href="">wie zijn wij</a></li>
-					<li><a href="">onze organisaties</a></li>
-					<li><a href="">FAQ</a></li>
-					<li class="hoogContrastKnop"><img src="images/logo hoog contrast.svg" alt="Hoog contrast knop"></li>
-				</ul>
+				<div id="paginas">		
+					<ul id="mobileNav">
+						<li><a href="">wie zijn wij</a></li>
+						<li><a href="#">onze organisaties</a></li>
+						<li><a href="">FAQ</a></li>
+					</ul>	
+					<div class="hoogContrastKnop"><img src="images/logo hoog contrast.svg" alt="Hoog contrast knop"></div>
+					<div id="mobileMenuIcon" >
+						<div class="mobileIconLijn1"></div>
+						<div class="mobileIconLijn2"></div>
+						<div class="mobileIconLijn3"></div>
+					</div>
 				</div>
 			</nav>
 			<div id="filter">
-				<select name="specialisaties" id="specFilter">
-					<option value="" disabled selected>Specialisatie</option>
-					<option value="visueel">Visuele begeleiding</option>
-					<option value="auditief">Auditieve begeleiding</option>
-					<option value="neuromotorisch">Neuromotorische begeleiding</option>
-				</select>
-				<select name="leeftijdscategorie" id="leeftijdFilter">
-					<option value="" disabled selected>Leeftijdscategorie</option>
-					<option value="peuters">Peuters</option>
-					<option value="minderjarigen">Minderjarigen</option>
-					<option value="volwassenen">Volwassenen</option>
-				</select>
-				<select name="regio" id="regioFilter">
-					<option value="" disabled selected>Regio</option>
-					<option value="antwerpen">Antwerpen</option>
-					<option value="brussel">Brussel</option>
-					<option value="limbburg">Limburg</option>
-					<option value="o-vlaanderen">Oost-Vlaanderen</option>
-					<option value="v-brabant">Vlaams-Brabant</option>
-					<option value="w-vlaanderen">West-Vlaanderen</option>
-				</select>
+				<div class="filter-container">
+					<select class="select-style" name="specialisaties" id="specFilter">
+						<option value="" disabled selected>Specialisatie</option>
+						<option value="all">Alle begeleidingen</option>
+						<option value="visueel">Visuele begeleiding</option>
+						<option value="auditief">Auditieve begeleiding</option>
+						<option value="neuromotorisch">Neuromotorische begeleiding</option>
+					</select>
+					<select class="select-style" name="leeftijdscategorie" id="leeftijdFilter">
+						<option value="" disabled selected>Leeftijdscategorie</option>
+						<option value="all">Alle leeftijdscategorïen</option>
+						<option value="peuters">Peuters</option>
+						<option value="minderjarigen">Minderjarigen</option>
+						<option value="volwassenen">Volwassenen</option>
+					</select>
+					<select class="select-style" name="regio" id="regioFilter">
+						<option value="" disabled selected>Regio</option>
+						<option value="all">Alle regio's</option>
+						<option value="antwerpen">Antwerpen</option>
+						<option value="brussel">Brussel</option>
+						<option value="limbburg">Limburg</option>
+						<option value="o-vlaanderen">Oost-Vlaanderen</option>
+						<option value="v-brabant">Vlaams-Brabant</option>
+						<option value="w-vlaanderen">West-Vlaanderen</option>
+					</select>
+					<button id="filterBevestiging">Filter Zoekresultaten <span>→</span></button>
+				</div>
 			</div>
 		</header>
-		<main>
-		
+		<main class="grid">
+			<section id="orgs_banner">
+				<div class="orgs_banner_tekst">
+					<h2>Op zoek naar hulp? Onze organisaties helpen u verder!</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, tenetur nobis optio, quaerat alias consequatur excepturi praesentium accusamus nesciunt soluta debitis nam fugit facilis incidunt ullam omnis ea, enim blanditiis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt praesentium sit accusamus assumenda nobis nostrum inventore nam fugit rerum, quas tempore quae illum dolores, reiciendis! Quas, minus praesentium? Esse, sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, explicabo quaerat necessitatibus laboriosam doloremque, officia. Ratione quibusdam in voluptates aut vero, adipisci quam nemo fugit itaque ut, eum, voluptas? Corrupti? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores mollitia voluptas libero, unde alias esse tempore harum, accusantium ad. Magni vel alias exercitationem, blanditiis. Eos iure similique, cum dignissimos obcaecati.</p>
+				</div>
+			</section>
+			<h3 class="org_titel">Onze organisaties</h3>
+			<section id="orgs_lijst">			
+				<div class="organisatie">
+					<img src="images/test_thumbnail.jpg" alt="">
+					<article class="org_tekst">
+						<h4>Begeleidingscentrum St-Gerardus</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eaque nihil, labore minus dignissimos voluptate modi corrupti. Aliquid at voluptatem nihil omnis, repudiandae fuga laudantium ullam ipsam perspiciatis, laboriosam error!</p>
+						<div class="org_buttons">
+						<a target="_blank" href="https://www.youtube.be">Website</a>
+						<a href="">Meer informatie <span>→</span></a>
+					</div>
+					</article>		
+				</div>
+				<div class="organisatie">
+					<img src="images/test_thumbnail.jpg" alt="">
+					<article class="org_tekst">
+						<h4>Begeleidingscentrum St-Gerardus</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eaque nihil, labore minus dignissimos voluptate modi corrupti. Aliquid at voluptatem nihil omnis, repudiandae fuga laudantium ullam ipsam perspiciatis, laboriosam error!</p>
+						<div class="org_buttons">
+						<a href="">Website</a>
+						<a href="">Meer informatie <span>→</span></a>
+					</div>
+					</article>
+				</div>
+				<div class="organisatie">
+					<img src="images/test_thumbnail.jpg" alt="">
+					<article class="org_tekst">
+						<h4>Begeleidingscentrum St-Gerardus</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eaque nihil, labore minus dignissimos voluptate modi corrupti. Aliquid at voluptatem nihil omnis, repudiandae fuga laudantium ullam ipsam perspiciatis, laboriosam error!</p>
+						<div class="org_buttons">
+						<a href="">Website</a>
+						<a href="">Meer informatie <span>→</span></a>
+					</div>
+					</article>
+				</div>
+				<div class="organisatie">
+					<img src="images/test_thumbnail.jpg" alt="">
+					<article class="org_tekst">
+						<h4>Begeleidingscentrum St-Gerardus</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eaque nihil, labore minus dignissimos voluptate modi corrupti. Aliquid at voluptatem nihil omnis, repudiandae fuga laudantium ullam ipsam perspiciatis, laboriosam error!</p>
+						<div class="org_buttons">
+						<a href="">Website</a>
+						<a href="">Meer informatie <span>→</span></a>
+					</div>
+					</article>
+				</div>
+			</section>
 		</main>
 		<footer>
 		
 		</footer>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/mobileNav.js"></script>
+	
+		
 	</body>
 </html>

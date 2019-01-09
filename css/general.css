@@ -16,7 +16,7 @@ p{
 
 /*grid*/
 .grid {
-    border: 0% 4% 0% 4%;
+  border: 0% 4% 0% 4%;
   display: grid;
   grid-template-columns: repeat(12, [col] 1fr);
   grid-column-gap: 2%;
