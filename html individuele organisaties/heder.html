@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>detail-organisatie-template</title>
+    <link rel="stylesheet" type="text/css" href="../css/general.css">
+    <link rel="stylesheet" type="text/css" href="../css/detail-organisatie-template.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="logoNav">
+                <div id="logoTableFix">
+                    <a href="#">
+                        <img src="../images/logo.svg" alt="logo van ZorgOrganisatie Netwerk">
+                        <h1>ZorgOrganisaties Netwerk</h1>
+                    </a>
+                </div>
+            </div>
+            <div id="paginas">
+                <ul>
+                    <li><a href="">wie zijn wij</a></li>
+                    <li><a href="">onze organisaties</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li class="hoogContrastKnop"><img src="../images/logo hoog contrast.svg" alt="Hoog contrast knop"></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="grid">
+        <figure id="logo"><img src="" alt="logo" width=100%></figure>
+        <div id="slideshow">
+            <img src="images/close-up-of-guinea-pig-eating-cucumber-on-floorboard-675608313-57fff1de5f9b5805c2b14e41.jpg" alt="" width=100% class="slide">
+            <img src="images/directeur.jpg" alt="" width=100% class="slide">
+            <img src="images/close-up-of-guinea-pig-eating-cucumber-on-floorboard-675608313-57fff1de5f9b5805c2b14e41.jpg" alt="" width=100% class="slide">
+            <script>
+                var slideIndex = 0;
+                carousel();
+
+                function carousel() { /*based on W3Schools: https://www.w3schools.com/w3css/w3css_slideshow.asp*/
+                    var i;
+                    var x = document.getElementsByClassName("slide");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > x.length) {
+                        slideIndex = 1
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                    setTimeout(carousel, 3000); // Change image every 3 seconds
+                }
+            </script>
+        </div>
+        <div id="info">
+            <h6>begeleidingscentrum sint-gerardus
+            </h6>
+            <table>
+                <tr>
+                    <td>begeleiding voor:</td>
+                    <td>Lorem ipsum</td>
+                </tr>
+                <tr>
+                    <td>leeftijd:</td>
+                    <td>lorem ipsum</td>
+                </tr>
+                <tr>
+                    <td>e-mail:</td>
+                    <td><a mailto:>loremipsum@sitamet.com</a></td>
+                </tr>
+                <tr>
+                    <td>tel.:</td>
+                    <td><a telto:>000000000000</a></td>
+                </tr>
+                <tr>
+                    <td>adres:</td>
+                    <td>industriekaai 170,<br>1070 andrelecht</td>
+                </tr>
+            </table>
+        </div>
+        <div class="mapouter" id="map-desktop">
+            <div class="gmap_canvas"><iframe width="600" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=ehb&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de"></a></div>
+        </div>
+        <div class="mapouter" id="map-tablet">
+            <div class="gmap_canvas"><iframe width="1000" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=ehb&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de"></a></div>
+        </div>
+        <div class="mapouter" id="map-mobile">
+            <div class="gmap_canvas"><iframe width="670" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=ehb&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de"></a></div>
+        </div>
+    </main>
+</body>
+</html>
