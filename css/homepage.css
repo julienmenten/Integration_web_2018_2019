@@ -1,8 +1,8 @@
 .fotoshome img {
-    width: 100%;
+ width 100%;
 }
 
-.slide img {
+.slide{
     max-height: 100vh;
     margin-bottom: 0;
 }
