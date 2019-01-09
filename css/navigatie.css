@@ -4,11 +4,11 @@ body{
 	margin: 0;
 }
 nav{
-	/*overflow: hidden;*/
+	overflow: hidden;
 	border-bottom: 0.5px solid #FF7B00;
 	width: 100%;
 	margin: auto;
-	/*max-height: 60px;*/
+	max-height: 60px;
 	font-family: 'Open sans';
 }
 #logoNav{
@@ -84,45 +84,62 @@ nav{
 }
 
 @media only screen and (max-width:890px){
+	
 	#paginas ul{
 		display: none;
+		max-height: 500px;
 	}
 	#mobileMenuIcon{
 		display: block;
 		margin: 10px  0px 0px 30px;
 	}
 	#mobileMenuIcon div{
-		height: 5px;
+		height: 3px;
 		width: 40px;
 		background-color: black;
-		margin: 6px 0;
-		border-radius: 5px;
-	}
-	#mobileNav{
-		width: 100%;
-		background-color: red;
-		display: block;
-		
-	}
-	#mobileNav li{
-		display: inline-table;
-	}
-	.knopAnimatie1 {
-		-webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  		transform: rotate(-45deg) translate(-9px, 6px);
+		margin: 8px 0;
+		border-radius: 50px;
 		transition: 0.3s;
 	}
-	.knopAnimatie2{
-		opacity: 0;
+	
+	#mobileNav{
+		position: absolute;
+		background-color: rgba(255, 123, 0, 1);
+		width: 100%;
+		top: 45px;
+		left: 0;
+		overflow: hidden;
+		height: 180px;
+		border-bottom: 2px solid white;
 	}
-	.knopAnimatie3{
-		-webkit-transform: rotate(45deg) translate(-8px, -8px);
-  		transform: rotate(45deg) translate(-8px, -8px);
+	#mobileNav li{
+		display: block;
+		text-align: center;
+		padding: 20px 0px;
+		width: 100%;
+	}
+	#paginas ul li a{
+		padding: 20px 50px;
+		border-bottom: 2px solid white;
+		color: white;
+		width: 100%;
+	}
+	#paginas ul:nth-child(3) a{
+		padding-bottom: 0px;
+	}
+	
+	.hoogContrastKnop{
+		margin-left: 10px;
 	}
 }
 @media only screen and (max-width:680px){
 	#logoNav h1{
-		font-size: 0.9rem;
+		font-size: 0.8em;
 		padding: 0 0 0 10px;
+	}
+}
+@media only screen and (max-width: 360px){
+	#logoNav h1{
+		display: none;
 	}
 }
