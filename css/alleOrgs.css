@@ -1,0 +1,227 @@
+@import "navigatie.css";
+@import "general.css";
+
+#filter{
+	width: 100%;
+	height: 60px;
+	background-color: #FF7B00;
+	margin-bottom: 50px;
+	display: flex;
+}
+.filter-container{
+	width: 100%;
+	margin: auto;
+	text-align: center;	
+}
+/**************************
+*    Style voor selects   *
+**************************/
+select{
+    padding: 5px;
+    font-size: 12px; 
+    height: 34px;
+	border-radius: 0;
+	border:3px double #FF7B00;
+	width: 280px;
+	margin: 0px 10px;
+	background-color: white;
+	background-image: url('../images/downArrow.svg');
+	background-size: 29px;
+	background-repeat: no-repeat;
+	background-position: 100.3%;
+}
+/************************************
+*	   Default style van selects    *
+*	verwijderen voor verschillende  *
+*			  browsers              *
+************************************/
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+/* For IE10 */
+select::-ms-expand {
+  display: none;
+}
+/***********************
+* Confirm button style *
+***********************/
+#filterBevestiging{ 
+	background-color: white;
+	border: 3px double #FF7B00;
+	padding: 6px 5px;
+	width: 280px;
+	margin: 0 10px;
+}
+#filterBevestiging span{
+	padding-left: 30px;
+	vertical-align: 1px;
+}
+/*******************************
+* Intro banner met tekst style *
+*******************************/
+#orgs_banner{
+	width: 100%;
+	grid-column: col 1/span 12;
+	height: 480px;
+	background: url("../images/org_banner.jpg");
+	background-position: center ;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+.orgs_banner_tekst{
+	background-color: rgba(255,255,255,0.80);	
+}
+.orgs_banner_tekst h2{
+	margin: auto;
+	width: 100%;
+	padding: 25px 0px;
+	font-size: 2rem;
+	font-weight: 400;
+	text-align: center;
+}
+.orgs_banner_tekst p{
+	width: 50%;
+	margin: auto;
+	font-size: 14px;
+	text-align: justify;
+	padding-bottom: 30px;
+}
+.org_titel{
+	grid-column: col 2 /span 10;
+}
+
+/************************************
+* Style voor lijst van organisaties *
+************************************/
+#orgs_lijst {
+	grid-column: col 2/ span 10;
+}
+
+.organisatie{
+	display: inline-flex;
+	width: 77%;
+	margin-bottom: 50px;
+}
+
+.organisatie:nth-child(2n+0){
+	float: right;
+}
+.organisatie .org_buttons{
+	display: block;
+	float: right;
+}
+
+.org_buttons{
+	vertical-align: top;
+}
+
+.org_buttons a{
+	text-decoration: none;
+	color: white;
+	background-color: #FF7B00;
+	border: 0;
+	font-size: 16px;
+	margin: 0px 15px;
+	padding: 3px 10px;
+	transition: 0.2s;
+}
+.org_buttons a:hover{
+	background-color: #FFC181;
+	transition: 0.2s;
+}
+.org_buttons span{
+	padding-left: 30px;
+	vertical-align: 1px;
+}
+
+.org_tekst{
+	margin-left: 40px;
+	vertical-align: middle;
+}
+
+
+/******************************
+*		Media queries 		  *
+******************************/
+@media only screen and (max-width:1150px){
+	#orgs_lijst {
+		grid-column: col 2/ span 11;
+	}
+	.organisatie{
+		margin-bottom: 50px;
+		width: 100%;
+	}
+	.organisatie:nth-child(2n+0){
+		float: left;
+	}
+	
+}
+@media only screen and (max-width:880px){
+	#orgs_lijst {
+		grid-column: col 1/ span 12;
+	}
+}
+@media only screen and (max-width:892px){
+	#filter{	
+		height: auto;	
+	}
+	.select-style{
+		margin: 10px;
+	}
+	#filterBevestiging{
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width:1080px){
+	.orgs_banner_tekst p{
+		width: 70%;	
+	}
+	.organisatie{
+		float: left;
+	}
+}
+
+@media only screen and (max-width:730px){
+	.org_titel{
+		text-align: center;
+	}
+
+	.organisatie{
+		display: block;
+	}
+	.organisatie img{
+		width: 100%;
+	}
+	.org_tekst{
+		display: block;
+		width: 92%;
+		margin-left: 0;
+		margin:auto;
+	}
+}
+
+@media only screen and (max-width:680px){
+	.orgs_banner_tekst h2{
+		padding: 25px 0px;
+		font-size: 1.4rem;
+	}
+	.orgs_banner_tekst p{
+		width: 90%;
+	}
+}
+@media only screen and (max-width:444px){
+	.select-style{
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
