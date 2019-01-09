@@ -40,7 +40,6 @@ nav{
 	vertical-align: middle;
 	font-weight: 100;
 }
-
 #logoNav a{
 	text-decoration: none;
 	color: black;
@@ -73,7 +72,6 @@ nav{
 	color: black;
 	padding: 0px 20px;
 }
-
 .hoogContrastKnop{
 	margin-top: 15px;
 	width: 30px;
@@ -82,7 +80,23 @@ nav{
 #mobileMenuIcon{
 	display: none;
 }
-
+/******************************
+* Mobile menu icon naar kruis *
+******************************/
+.knopAnimatie1{
+	transform: rotate(-45deg) translate(-9px, 6px);
+	transition: 0.5s;
+}
+.knopAnimatie2{
+	opacity: 0;
+}
+.knopAnimatie3{
+	transform: rotate(45deg) translate(-8px, -8px);
+	transition: 0.5s;
+}
+/******************************
+*		Media queries 		  *
+******************************/
 @media only screen and (max-width:890px){
 	
 	#paginas ul{

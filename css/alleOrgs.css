@@ -11,30 +11,57 @@
 .filter-container{
 	width: 100%;
 	margin: auto;
-	text-align: center;
-	
+	text-align: center;	
 }
-
-.select-style{
+/**************************
+*    Style voor selects   *
+**************************/
+select{
+    padding: 5px;
+    font-size: 12px; 
+    height: 34px;
 	border-radius: 0;
-	padding: 5px;
 	border:3px double #FF7B00;
-	width: 200px;
+	width: 280px;
 	margin: 0px 10px;
 	background-color: white;
+	background-image: url('../images/downArrow.svg');
+	background-size: 29px;
+	background-repeat: no-repeat;
+	background-position: 100.3%;
 }
-
+/************************************
+*	   Default style van selects    *
+*	verwijderen voor verschillende  *
+*			  browsers              *
+************************************/
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+/* For IE10 */
+select::-ms-expand {
+  display: none;
+}
+/***********************
+* Confirm button style *
+***********************/
 #filterBevestiging{ 
 	background-color: white;
 	border: 3px double #FF7B00;
 	padding: 6px 5px;
-	width: 200px;
+	width: 280px;
 	margin: 0 10px;
 }
 #filterBevestiging span{
 	padding-left: 30px;
 	vertical-align: 1px;
 }
+/*******************************
+* Intro banner met tekst style *
+*******************************/
 #orgs_banner{
 	width: 100%;
 	grid-column: col 1/span 12;
@@ -70,6 +97,9 @@
 	grid-column: col 2 /span 10;
 }
 
+/************************************
+* Style voor lijst van organisaties *
+************************************/
 #orgs_lijst {
 	grid-column: col 2/ span 10;
 }
@@ -116,18 +146,10 @@
 	vertical-align: middle;
 }
 
-.knopAnimatie1{
-	transform: rotate(-45deg) translate(-9px, 6px);
-	transition: 0.5s;
-}
-.knopAnimatie2{
-	opacity: 0;
-}
-.knopAnimatie3{
-	transform: rotate(45deg) translate(-8px, -8px);
-	transition: 0.5s;
-}
 
+/******************************
+*		Media queries 		  *
+******************************/
 @media only screen and (max-width:1150px){
 	#orgs_lijst {
 		grid-column: col 2/ span 11;
