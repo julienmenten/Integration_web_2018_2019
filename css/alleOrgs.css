@@ -54,6 +54,17 @@ select::-ms-expand {
 	padding: 6px 5px;
 	width: 280px;
 	margin: 0 10px;
+	transition: 0.2s;
+}
+#filterBevestiging:hover{ 
+	background-color:#ffe5cc;
+	cursor: pointer;
+	transition: 0.2s;
+}
+#filterBevestiging:active{ 
+	background-color:#FF7B00;
+	cursor: pointer;
+	transition: 0.2s;
 }
 #filterBevestiging span{
 	padding-left: 30px;
