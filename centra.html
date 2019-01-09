@@ -48,7 +48,7 @@
 				<div class="filter-container">
 					<!-- Filter voor specialisaties  -->
 					<select class="select-style" name="specialisaties" id="specFilter">
-						<option value="" disabled selected>Specialisatie</option>
+						<option value="all" selected>Specialisatie</option>
 						<option value="all">Alle begeleidingen</option>
 						<option value="visueel">Visuele begeleiding</option>
 						<option value="auditief">Auditieve begeleiding</option>
@@ -56,19 +56,19 @@
 					</select>
 					<!-- Filter voor leeftijdscategorïen -->
 					<select class="select-style" name="leeftijdscategorie" id="leeftijdFilter">
-						<option value="" disabled selected>Leeftijdscategorie</option>
+						<option value="all"  selected>Leeftijdscategorie</option>
 						<option value="all">Alle leeftijdscategorïen</option>
-						<option value="peuters">Peuters</option>
-						<option value="minderjarigen">Minderjarigen</option>
+						<option value="kinderen">Kinderen</option>
+						<option value="jongeren">Jongeren</option>
 						<option value="volwassenen">Volwassenen</option>
 					</select>
 					<!-- Filter voor regio's  -->
 					<select class="select-style" name="regio" id="regioFilter">
-						<option value="" disabled selected>Regio</option>
+						<option value="all" selected>Regio</option>
 						<option value="all">Alle regio's</option>
 						<option value="antwerpen">Antwerpen</option>
 						<option value="brussel">Brussel</option>
-						<option value="limbburg">Limburg</option>
+						<option value="limburg">Limburg</option>
 						<option value="o-vlaanderen">Oost-Vlaanderen</option>
 						<option value="v-brabant">Vlaams-Brabant</option>
 						<option value="w-vlaanderen">West-Vlaanderen</option>
@@ -91,7 +91,7 @@
 			<!-- Lijst met al de organisaties  -->
 			<section id="orgs_lijst">
 				<!-- St- Gerardus  -->
-				<div class="organisatie">
+				<div class="organisatie all neuromotorisch all jongeren volwassenen all limburg">
 					<img src="images/test_thumbnail.jpg" alt="">
 					<article class="org_tekst">
 						<h4>Begeleidingscentrum St-Gerardus</h4>
@@ -103,7 +103,7 @@
 					</article>		
 				</div>
 				<!-- Heder  -->
-				<div class="organisatie">
+				<div class="organisatie all neuromotorisch all kinderen jongeren volwassenen all antwerpen">
 					<img src="images/test_thumbnail.jpg" alt="">
 					<article class="org_tekst">
 						<h4>Heder</h4>
@@ -115,7 +115,7 @@
 					</article>
 				</div>
 				<!-- KIDS -->
-				<div class="organisatie">
+				<div class="organisatie all auditief all kinderen jongeren volwassenen all limburg">
 					<img src="images/test_thumbnail.jpg" alt="">
 					<article class="org_tekst">
 						<h4>KIDS</h4>
@@ -127,7 +127,7 @@
 					</article>
 				</div>
 				<!-- Sint Gregorius  -->
-				<div class="organisatie">
+				<div class="organisatie all auditief motorisch all jongeren volwassenen all o-vlaanderen">
 					<img src="images/test_thumbnail.jpg" alt="">
 					<article class="org_tekst">
 						<h4>MFC Sint-Gregorius</h4>
@@ -139,7 +139,7 @@
 					</article>
 				</div>
 				<!-- OC De Beweging  -->
-				<div class="organisatie">
+				<div class="organisatie all neuromotorisch all volwassenen all o-vlaanderen">
 					<img src="images/test_thumbnail.jpg" alt="">
 					<article class="org_tekst">
 						<h4>OC De Beweging</h4>
@@ -151,7 +151,7 @@
 					</article>
 				</div>
 				<!-- Spermalie  -->
-				<div class="organisatie">
+				<div class="organisatie all visueel auditief all kinderen jongeren volwassenen all w-vlaanderen">
 					<img src="images/test_thumbnail.jpg" alt="">
 					<article class="org_tekst">
 						<h4>Spermalie</h4>
