@@ -1,58 +1,121 @@
 .fotoshome img {
- width 100%;
-}
-
-.slide{
-    max-height: 100vh;
-    margin-bottom: 0;
-}
-
-.backgroundhome h4 {
-    color: white;
-    display: table-cell;
+	    width: 100%;
+	}
+	
+	.slide img {
+	    max-height: 100vh;
+	    margin-bottom: 0;
+	}
+	
+	.backgroundhome h4 {
+	    color: white;
+	    display: table-cell;
     padding: 0 0 0 20px;
     vertical-align: middle;
     padding-left: 7px;
 }
-
 .backgroundhome a {
     text-decoration: none;
     color: black;
     display: table;
     margin-top: 10%;
 }
-
 .backgroundhome img {
     width: 76px;
     height: 76px;
 }
-
 .visuelebegeleiding {
     display: inline-block;
     vertical-align: middle;
     grid-column: col 3/ span 3;
 }
-
 .auditievebegeleiding {
     display: inline-block;
     vertical-align: middle;
     grid-column: col 6/ span 3;
 }
-
 .motorischebegeleiding {
     display: inline-block;
     vertical-align: middle;
     grid-column: col 9/ span 3;
 }
-
-.backgroundfilter {
-    position: absolute;
-    top: 0;
-    margin-top: 32%;
-    width: 100%;
-    height: 20%;
-    background-color: #ff7b00;
-    opacity: .9;
-}
-
-@media
+	
+	.backgroundfilter {
+	    position: absolute;
+         top: 0;
+	    margin-top: 32%;
+	    width: 100%;
+	    height: 20%;
+	    background-color: #ff7b00;
+	    opacity: .9;
+	}
+@media only screen and (max-width: 1080px) {
+	    .slide {
+	        object-fit: cover;
+	        width: 1024px;
+	        height: 1366px;
+	    }
+	
+	    .backgroundfilter {
+	        position: fixed;
+	        top: 65%;
+	        margin-top: 0;
+	        height: 35%;
+	    }
+	
+	    .visuelebegeleiding {
+	        grid-column: col 6/ span 3;
+	        border-bottom: 2px solid white;
+	    }
+	
+	    .auditievebegeleiding {
+	        grid-column: col 6/ span 3;
+	        border-bottom: 2px solid white;
+	    }
+	
+	    .motorischebegeleiding {
+	        grid-column: col 6/ span 3;
+	        border-bottom: 2px solid white;
+	    }
+	
+	    .backgroundhome img {
+	        display: none;
+	    }
+	
+	    .backgroundhome h4 {
+	        font-size: 20px;
+	        padding: 0;
+	        text-align: center;
+	        display: block;
+	        margin-top: 6vh;
+	    }
+	
+	    .backgroundhome a {
+	        display: block;
+	    }
+	
+	    @media only screen and (max-width: 768px) {
+	
+	        .slide {
+	            max-width: 768px;
+	            max-height: 1024px;
+	        }
+	
+	        .backgroundhome h4 {
+	            margin-top: 3vh;
+	        }
+	    }
+	
+	    @media only screen and (max-width: 414px) {
+	        .slide {
+	            max-width: 414px;
+	            max-height: 823px;
+	        }
+	
+	        .backgroundhome h4 {
+	            font-size: 78%;
+	            margin-top: 2vh;
+	        }
+	    }
+	}
+	}

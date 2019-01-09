@@ -2,40 +2,47 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Homepage</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
-<body>
+<body scroll="no">
     <header>
+        <!-- Navigatie-->
         <nav>
+            <!-- Logo en naam -->
             <div id="logoNav">
                 <div id="logoTableFix">
-                    <a href="#">
+                    <a href="Homepage.html">
                         <img src="images/logo.svg" alt="logo van ZorgOrganisatie Netwerk">
                         <h1>ZorgOrganisaties Netwerk</h1>
                     </a>
                 </div>
             </div>
             <div id="paginas">
-                <ul>
-                    <li><a href="">wie zijn wij</a></li>
+                <ul id="mobileNav">
+                    <!-- Links naar pagina's-->
+                    <li><a href="wie-zijn-wij.html">wie zijn wij</a></li>
                     <li><a href="centra.html">onze organisaties</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li class="hoogContrastKnop"><img src="images/logo hoog contrast.svg" alt="Hoog contrast knop"></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
                 </ul>
+                <!-- Hoogcontrastknop -->
+                <div class="hoogContrastKnop"><img src="images/logo hoog contrast.svg" alt="Hoog contrast knop"></div>
+                <!-- Mobile navigatie icoon -->
+                <div id="mobileMenuIcon">
+                    <div class="mobileIconLijn1"></div>
+                    <div class="mobileIconLijn2"></div>
+                    <div class="mobileIconLijn3"></div>
+                </div>
             </div>
         </nav>
     </header>
 
     <div class="fotoshome">
-        <div class="slide">
-            <img src="images/homepagebackground.jpg">
-        </div>
-        <div class="slide">
-            <img src="images/homepagebackground2.jpg">
-        </div>
+        <img src="images/homepagebackground.jpg" class="slide">
+        <img src="images/homepagebackground2.jpg" class="slide">
     </div>
     <script>
         var slideIndex = 0;
@@ -79,6 +86,13 @@
             </main>
         </div>
     </div>
+    <!-- Script(s) (ingeladen NA HTML en CSS!)-->
+    <!-- Inladen van jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- jQuery code voor responsieve navigatie -->
+    <script type="text/javascript" src="js/mobileNav.js"></script>
+    <!-- jQuery code voor filtering systeem van de organisaties -->
+    <script type="text/javascript" src="js/filter.js"></script>
 </body>
 
 </html>
