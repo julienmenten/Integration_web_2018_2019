@@ -7,6 +7,7 @@
 	background-color: #FF7B00;
 	margin-bottom: 50px;
 	display: flex;
+	border-bottom: 2px solid white;
 }
 .filter-container{
 	width: 100%;
@@ -232,6 +233,31 @@ select::-ms-expand {
 	#filterBevestiging{
 		margin-top: 10px;
 	}
+	/**************************
+	* Filter pijl en animatie *
+	**************************/
+	.arrowBtn img{
+		display: block;
+		height: 30px;
+		width: auto;
+		margin: 5px auto 15px;
+		transition: 0.4s;
+	}
+	.arrowBtn p{
+		margin: 10px 0 0;
+		color: white;
+		font-weight: 600;
+		transition: 0.4s;
+	}
+	.arrowAnimation{
+		transform: rotate(180deg) scale(1.5);
+		transform-origin: center;
+		transition: 0.4s;
+	}
+	.filterTextAnimation{
+		opacity: 0;
+		transition: 0.4s;
+	}
 }
 
 @media only screen and (max-width:1080px){
@@ -243,7 +269,7 @@ select::-ms-expand {
 	}
 }
 
-@media only screen and (max-width:730px){
+@media only screen and (max-width:731px){
 	.org_titel{
 		text-align: center;
 	}
@@ -258,6 +284,20 @@ select::-ms-expand {
 		width: 92%;
 		margin-left: 0;
 		margin:auto;
+	}
+	.organisatie .org_buttons{
+		float: none;
+		width: 100%;
+		
+	}
+	.org_buttons a{
+		margin: 10px 0;
+		display: flex;
+		height: 50px;
+	}
+	.org_buttons a span{
+		padding-left: 50% ;
+		font-size: 2rem;
 	}
 }
 
