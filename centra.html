@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="css/alleOrgs.css">
 		
 		<!-- Scripts -->
-		
+		<script type="text/javascript" src="js/cookies.js"></script>
 	</head>
 	<body>
 		<header>
@@ -49,7 +49,7 @@
 				<div class="filter-container" alt="Filterbalk voor centra's">
 					<!-- Filter voor specialisaties  -->
 					<select class="select-style" name="specialisaties" id="specFilter" alt="Kies een begeleiding">
-						<option class="defaultOption" value="all" selected>Specialisatie</option>
+						<option value="all" selected>Specialisatie</option>
 						<option value="all">Alle begeleidingen</option>
 						<option value="visueel">Visuele begeleiding</option>
 						<option value="auditief">Auditieve begeleiding</option>
@@ -75,7 +75,7 @@
 						<option value="w-vlaanderen">West-Vlaanderen</option>
 					</select>
 					<!-- Bevestigings knop -->
-					<button id="filterBevestiging">Filter Zoekresultaten <span>→</span></button>
+					<button id="filterBevestiging" onClick="checkCookie()">Filter Zoekresultaten <span>→</span></button>
 				</div>
 				<div id="mobileFilter">
 					<div class="arrowBtn"><p>Filter</p><img src="images/filterArrow.svg" alt="Pijl om filter menu te tonen"></div>
@@ -92,6 +92,9 @@
 			</section>
 			
 			<h3 class="org_titel">Onze organisaties</h3>
+			
+			<!-- Indien er geen centra's kunnen worden vertoond:  -->
+			<p id="geenCriteria">Er zijn geen centra die voldoen aan uw criteria.</p>
 			<!-- Lijst met al de organisaties  -->
 			<section id="orgs_lijst">
 				<!-- St- Gerardus  -->
@@ -178,19 +181,9 @@
 					</div>
 					</article>
 				</div>
-				<!-- Ganspoel  -->
-				<div class="organisatie all visueel all kinderen jongeren volwassenen all v-brabant">
-					<img src="images/test_thumbnail.jpg" alt="">
-					<article class="org_tekst">
-						<h4>Ganspoel</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eaque nihil, labore minus dignissimos voluptate modi corrupti. Aliquid at voluptatem nihil omnis, repudiandae fuga laudantium ullam ipsam perspiciatis, laboriosam error!</p>
-						<div class="org_buttons">
-						<a href="">Website</a>
-						<a href="">Meer informatie <span>→</span></a>
-					</div>
-					</article>
-				</div>
+		
 				<!-- vvvvv   Voeg hier organisaties toe   vvvvv -->
+				
 				
 			</section>
 		</main>
