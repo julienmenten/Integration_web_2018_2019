@@ -62,6 +62,7 @@ nav{
 	list-style-type: none;
 	padding: 0;
 	max-height: 60px;
+	margin-top: 20px;
 }
 #paginas li{
 	display: inline-block;
@@ -71,7 +72,19 @@ nav{
 	text-decoration: none;
 	color: black;
 	padding: 0px 20px;
+	
 }
+.huidigePagina{
+	font-weight: 600;
+}
+#paginas li a:after {
+  display:block;
+  content: '';
+  border-bottom: solid 1px #FF7B00;  
+  transform: scaleX(0);  
+  transition: transform 300ms ease-in-out;
+}
+#paginas li a:hover:after { transform: scaleX(1); }
 .hoogContrastKnop{
 	margin-top: 15px;
 	width: 30px;
@@ -115,7 +128,6 @@ nav{
 		border-radius: 50px;
 		transition: 0.3s;
 	}
-	
 	#mobileNav{
 		position: absolute;
 		background-color: rgba(255, 123, 0, 1);
@@ -137,13 +149,20 @@ nav{
 		border-bottom: 2px solid white;
 		color: white;
 		width: 100%;
+
 	}
 	#paginas ul:nth-child(3) a{
 		padding-bottom: 0px;
 	}
-	
 	.hoogContrastKnop{
 		margin-left: 10px;
+	}
+	#paginas li a:after {
+	  display:none;
+	}
+	.huidigePagina{
+		background-color: rgba(255, 229, 204, 0.6);
+		
 	}
 }
 @media only screen and (max-width:680px){
