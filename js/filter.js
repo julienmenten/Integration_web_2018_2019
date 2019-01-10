@@ -30,7 +30,7 @@ function filterCentra(){
 		notFilter.css( "display", "none");
 		// Eens je op bevestigen drukt, verdwijnt de mobiele filter blok
 		if($(window).width() <= 1193){
-			$('.filter-container').slideToggle().removeClass('mobileFilterToggle');
+			//$('.filter-container').slideToggle().removeClass('mobileFilterToggle');
 			$(".arrowBtn>img").toggleClass("arrowAnimation");
 			$(".arrowBtn>p").toggleClass("filterTextAnimation");
 		};
