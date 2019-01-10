@@ -50,7 +50,7 @@ Lijst van mogelijke waarden:
 	- w-vlaanderen
 */
 // Sticky filter 
-var num = 60;
+var num = 60; // Grootte van navigatie balk boven de filterbalk
 
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > num) {
@@ -67,7 +67,7 @@ $("#mobileFilter").click(function(){
 	$('.filter-container').slideToggle().toggleClass('mobileFilterToggle');
 	$(".arrowBtn>img").toggleClass("arrowAnimation");
 	$(".arrowBtn>p").toggleClass("filterTextAnimation");
-	
+	filterMenuDown = true;
 });
 
 $(window).on('resize', function(){
@@ -92,7 +92,6 @@ $(window).on('resize', function(){
 	if($(this).width() <= 731){
 		$("div.organisatie").css("display", "block");
 		notFilter.css("display","none");
-		
 	} 
 	if($(this).width() > 731){
 		$("div.organisatie").css("display", "inline-flex");	
