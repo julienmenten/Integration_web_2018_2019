@@ -12,7 +12,7 @@ $("#filterBevestiging").click(function(){
 	
 	//Op kleine schermen moet de display block zijn, en op grote schermen inline-flex. Deze stuk code toont de gewenste centrums
 	if(windowWidth <= 730){
-		$("div.organisatie").css("display", "block");	
+		$("div.organisatie").css("display", "block");
 	} 
 	if(windowWidth > 730){
 		$("div.organisatie").css("display", "inline-flex");	
@@ -25,6 +25,7 @@ $("#filterBevestiging").click(function(){
 		$(".arrowBtn>img").toggleClass("arrowAnimation");
 		$(".arrowBtn>p").toggleClass("filterTextAnimation");
 	};
+	
 });
 /*
 Lijst van mogelijke waarden: 
@@ -54,7 +55,7 @@ var num = 60;
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() > num) {
         $('#filter').addClass('sticky');
-		$('.grid').css("padding-top","120px");
+		$('.grid').css("padding-top","70px");
     } else {
         $('#filter').removeClass('sticky');
 		$('.grid').css("padding-top","00px");
@@ -66,7 +67,7 @@ $("#mobileFilter").click(function(){
 	$('.filter-container').slideToggle().toggleClass('mobileFilterToggle');
 	$(".arrowBtn>img").toggleClass("arrowAnimation");
 	$(".arrowBtn>p").toggleClass("filterTextAnimation");
-	filterMenuDown = true;
+	
 });
 
 $(window).on('resize', function(){

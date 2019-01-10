@@ -5,7 +5,6 @@
 	width: 100%;
 	height: 60px;
 	background-color: #FF7B00;
-	margin-bottom: 50px;
 	display: flex;
 	border-bottom: 2px solid white;
 }
@@ -106,6 +105,7 @@ select::-ms-expand {
 	display: flex;
 	align-items: center;
 	overflow: hidden;
+	margin-top: 50px;
 }
 .orgs_banner_tekst{
 	background-color: rgba(255,255,255,0.80);	
@@ -189,6 +189,9 @@ select::-ms-expand {
 *		Media queries 		  *
 ******************************/
 @media only screen and (max-width:1150px){
+	#orgs_banner{
+		margin-top: 0px;
+	}
 	#orgs_lijst {
 		grid-column: col 2/ span 11;
 	}
