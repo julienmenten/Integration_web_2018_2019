@@ -1,0 +1,21 @@
+
+footer{
+    background-color: #FF7B00;
+    height:30px;
+    position:relative;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+}
+
+main{
+    flex:1;
+}
+
+.schoollogo{
+    width:60px;
+    max-height:30px;
+    margin-left: 10px;
+}
