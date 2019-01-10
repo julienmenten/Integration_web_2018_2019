@@ -74,8 +74,8 @@ nav{
 	padding: 0px 20px;
 	
 }
-.huidigePagina{
-	font-weight: ;
+.huidigePagina a{
+	font-weight: 800;
 }
 #paginas li a:after {
   display:block;
