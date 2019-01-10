@@ -23,11 +23,15 @@ var begeleidingKeuze = document.cookie;
 
 // Controleren wat er in de cookie staat
 function checkCookie() {
-	alert(document.cookie);
+	//alert(document.cookie);
 }
 
+// De waarde van de select aanpassen aan de gekozen begeleidingsoptie 
 function setOption(){
-	
+	var selected = document.cookie;
+	document.getElementById('specFilter').value = begeleidingKeuze;
+
+	alert(selected);
 }
 
 console.log(begeleidingKeuze);
