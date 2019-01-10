@@ -75,7 +75,7 @@ nav{
 	
 }
 .huidigePagina{
-	font-weight: 600;
+	font-weight: ;
 }
 #paginas li a:after {
   display:block;
@@ -115,6 +115,7 @@ nav{
 	#paginas ul{
 		display: none;
 		max-height: 500px;
+		margin-top: 15px;
 	}
 	#mobileMenuIcon{
 		display: block;
