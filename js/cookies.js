@@ -38,9 +38,15 @@ function checkCookie() {
 
 // De waarde van de select aanpassen aan de gekozen begeleidingsoptie 
 function setOption(){
-	var selected = document.cookie;
+	// De gekozen specialeit vanop de homepage kiezen in de select element
 	document.getElementById('specFilter').value = begeleidingKeuze;
+	//Direct opzoeken naar gekozen specialiteit
 	filterCentra();
+	// Fix voor filterpijl dat fout afgebeeld word (omgekeerd)
+	$(".arrowBtn>img").removeClass("arrowAnimation");
+	$(".arrowBtn>p").removeClass("filterTextAnimation");
+	// vermijden dat de filter menu open staat wanneer de pagina inlaad
+	$('.filter-container').toggle().removeClass('mobileFilterToggle');
 }
 
 console.log(begeleidingKeuze);

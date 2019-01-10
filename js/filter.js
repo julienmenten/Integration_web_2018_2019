@@ -17,7 +17,7 @@ function filterCentra(){
 	
 	// geen juiste criteria
 	
-		//Op kleine schermen moet de display block zijn, en op grote schermen inline-flex. Deze stuk code toont de gewenste centrums
+		//Op kleine schermen moet de display block zijn, en op grote schermen inline-flex. Deze stuk code toont de gewenste centra 
 		if(windowWidth <= 730){
 			$("div.organisatie").css("display", "block");
 			$("#geenCriteria").css("display", "none");
@@ -30,10 +30,12 @@ function filterCentra(){
 		notFilter.css( "display", "none");
 		// Eens je op bevestigen drukt, verdwijnt de mobiele filter blok
 		if($(window).width() <= 1193){
-			//$('.filter-container').slideToggle().removeClass('mobileFilterToggle');
+			$('.filter-container').slideToggle().removeClass('mobileFilterToggle');
 			$(".arrowBtn>img").toggleClass("arrowAnimation");
 			$(".arrowBtn>p").toggleClass("filterTextAnimation");
 		};
+	// Wanneer je op zoeken drukt, word je naar de top van de lijst verplaatst 
+	
 };
 /*
 Lijst van mogelijke waarden: 
@@ -109,7 +111,7 @@ $(window).on('resize', function(){
 	if(filterMenuDown == true){
 		$(".arrowBtn>img").removeClass("arrowAnimation");
 		$(".arrowBtn>p").removeClass("filterTextAnimation");
-	}
+	};
 });
 
 	
