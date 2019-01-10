@@ -11,7 +11,6 @@
 		<link rel="stylesheet" href="css/alleOrgs.css">
 		
 		<!-- Scripts -->
-		
 	</head>
 	<body>
 		<header>
@@ -20,7 +19,7 @@
 				<!-- Logo en naam -->
 				<div id="logoNav">
 					<div id="logoTableFix">
-						<a href="homepage.html">
+						<a href="homepage.html" onClick="setAll()">
 							<img src="images/logo.svg" alt="logo van ZorgOrganisatie Netwerk">
 							<h1>ZorgOrganisaties Netwerk</h1>
 						</a>
@@ -29,9 +28,9 @@
 				<div id="paginas">		
 					<ul id="mobileNav">
 						<!-- Links naar pagina's-->
-						<li><a href="wie-zijn-wij.html">wie zijn wij</a></li>
-						<li class="huidigePagina"><a href="#" >onze organisaties</a></li>
-						<li><a href="FAQ.html">FAQ</a></li>
+						<li><a href="wie-zijn-wij.html" onClick="setAll()">wie zijn wij</a></li>
+						<li class="huidigePagina"><a href="#" onClick="setAll()">onze organisaties</a></li>
+						<li><a href="FAQ.html" onClick="setAll()">FAQ</a></li>
 					</ul>	
 					<!-- Hoogcontrastknop -->
 					<div class="hoogContrastKnop"><img src="images/logo hoog contrast.svg" alt="Hoog contrast knop"></div>
@@ -49,7 +48,7 @@
 				<div class="filter-container" alt="Filterbalk voor centra's">
 					<!-- Filter voor specialisaties  -->
 					<select class="select-style" name="specialisaties" id="specFilter" alt="Kies een begeleiding">
-						<option class="defaultOption" value="all" selected>Specialisatie</option>
+						<option value="all" >Specialisatie</option>
 						<option value="all">Alle begeleidingen</option>
 						<option value="visueel">Visuele begeleiding</option>
 						<option value="auditief">Auditieve begeleiding</option>
@@ -57,7 +56,7 @@
 					</select>
 					<!-- Filter voor leeftijdscategorïen -->
 					<select class="select-style" name="leeftijdscategorie" id="leeftijdFilter" alt="Kies een leeftijdscategorie">
-						<option value="all"  selected>Leeftijdscategorie</option>
+						<option value="all">Leeftijdscategorie</option>
 						<option value="all">Alle leeftijdscategorïen</option>
 						<option value="kinderen">Kinderen</option>
 						<option value="jongeren">Jongeren</option>
@@ -65,7 +64,7 @@
 					</select>
 					<!-- Filter voor regio's  -->
 					<select class="select-style" name="regio" id="regioFilter" alt="Kies een regio">
-						<option value="all" selected>Regio</option>
+						<option value="all">Regio</option>
 						<option value="all">Alle regio's</option>
 						<option value="antwerpen">Antwerpen</option>
 						<option value="brussel">Brussel</option>
@@ -75,7 +74,7 @@
 						<option value="w-vlaanderen">West-Vlaanderen</option>
 					</select>
 					<!-- Bevestigings knop -->
-					<button id="filterBevestiging">Filter Zoekresultaten <span>→</span></button>
+					<button id="filterBevestiging" onClick="filterCentra()">Filter Zoekresultaten <span>→</span></button>
 				</div>
 				<div id="mobileFilter">
 					<div class="arrowBtn"><p>Filter</p><img src="images/filterArrow.svg" alt="Pijl om filter menu te tonen"></div>
@@ -92,6 +91,9 @@
 			</section>
 			
 			<h3 class="org_titel">Onze organisaties</h3>
+			
+			<!-- Indien er geen centra's kunnen worden vertoond:  -->
+			<p id="geenCriteria">Er zijn geen centra die voldoen aan uw criteria.</p>
 			<!-- Lijst met al de organisaties  -->
 			<section id="orgs_lijst">
 				<!-- St- Gerardus  -->
@@ -174,12 +176,12 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat eaque nihil, labore minus dignissimos voluptate modi corrupti. Aliquid at voluptatem nihil omnis, repudiandae fuga laudantium ullam ipsam perspiciatis, laboriosam error!</p>
 						<div class="org_buttons">
 						<a href="http://www.ganspoel.be/index.php">Website</a>
-						<a href="/individuele_organisaties/ganspoel.html">Meer informatie <span>→</span></a>
+						<a href="">Meer informatie <span>→</span></a>
 					</div>
 					</article>
 				</div>
 				<!-- vvvvv   Voeg hier organisaties toe   vvvvv -->
-				
+							
 			</section>
 		</main>
 		<footer>
@@ -192,6 +194,10 @@
 			<script type="text/javascript" src="js/mobileNav.js"></script>
 			<!-- jQuery code voor filtering systeem van de organisaties -->
 			<script type="text/javascript" src="js/filter.js"></script>
-
+			<!-- Cookies script voor bijhouden keuze op homepage -->
+			<script type="text/javascript" src="js/cookies.js"></script>
+			<script>
+				setOption();
+			</script>
 	</body>
 </html>

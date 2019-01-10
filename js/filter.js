@@ -1,6 +1,11 @@
+
+//Globale variabelen
 var filterMenuDown = false;
 
-$("#filterBevestiging").click(function(){
+
+// Main Filter functie 
+
+function filterCentra(){
 	var begeleiding = $("#specFilter").val();
 	var regio = $("#regioFilter").val();
 	var leeftijd =$("#leeftijdFilter").val();
@@ -10,23 +15,26 @@ $("#filterBevestiging").click(function(){
 	var filter = $(["class*='."+ begeleiding +"."+ leeftijd +"."+ regio +"'"]);	
 	var notFilter = $("div.organisatie:not("+"." + begeleiding +"."+ leeftijd +"."+ regio +")");
 	
-	//Op kleine schermen moet de display block zijn, en op grote schermen inline-flex. Deze stuk code toont de gewenste centrums
-	if(windowWidth <= 730){
-		$("div.organisatie").css("display", "block");
-	} 
-	if(windowWidth > 730){
-		$("div.organisatie").css("display", "inline-flex");	
-	};	
-	//Deze stuk code verbergd de ongewenste centra 
-	notFilter.css( "display", "none");
-	// Eens je op bevestigen drukt, verdwijnt de mobiele filter blok
-	if($(window).width() <= 1193){
-		$('.filter-container').slideToggle().removeClass('mobileFilterToggle');
-		$(".arrowBtn>img").toggleClass("arrowAnimation");
-		$(".arrowBtn>p").toggleClass("filterTextAnimation");
-	};
+	// geen juiste criteria
 	
-});
+		//Op kleine schermen moet de display block zijn, en op grote schermen inline-flex. Deze stuk code toont de gewenste centrums
+		if(windowWidth <= 730){
+			$("div.organisatie").css("display", "block");
+			$("#geenCriteria").css("display", "none");
+		}
+		if(windowWidth > 730){
+			$("div.organisatie").css("display", "inline-flex");
+			$("#geenCriteria").css("display", "none");
+		};	
+		//Deze stuk code verbergd de ongewenste centra 
+		notFilter.css( "display", "none");
+		// Eens je op bevestigen drukt, verdwijnt de mobiele filter blok
+		if($(window).width() <= 1193){
+			$('.filter-container').slideToggle().removeClass('mobileFilterToggle');
+			$(".arrowBtn>img").toggleClass("arrowAnimation");
+			$(".arrowBtn>p").toggleClass("filterTextAnimation");
+		};
+};
 /*
 Lijst van mogelijke waarden: 
 - begeleiding: 
@@ -49,7 +57,8 @@ Lijst van mogelijke waarden:
 	- v-brabant
 	- w-vlaanderen
 */
-// Sticky filter 
+
+// Sticky filter bar
 var num = 60; // Grootte van navigatie balk boven de filterbalk
 
 $(window).bind('scroll', function () {
