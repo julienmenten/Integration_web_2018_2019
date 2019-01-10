@@ -1,6 +1,8 @@
-/*imports*/
+/*************
+imports
+*************/
 @import url("navigatie.css");
-
+@import url("footer.css");
 /*font*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i');
 
@@ -20,7 +22,7 @@ h6 {
 }
 
 p,
-td {
+td,a {
     font-weight: 300;
     color: #000;
 }
