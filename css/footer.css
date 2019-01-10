@@ -1,10 +1,6 @@
-html, body{
-    height:100%;
-    margin:0px;
-}
 
 footer{
-    background-color: #F07A39;
+    background-color: #FF7B00;
     height:30px;
     position:relative;
 }
@@ -20,6 +16,6 @@ main{
 
 .schoollogo{
     width:60px;
-    height:30px;
+    max-height:30px;
     margin-left: 10px;
 }

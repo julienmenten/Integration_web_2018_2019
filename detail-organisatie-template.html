@@ -9,24 +9,34 @@
 
 <body>
     <header>
-        <nav>
-            <div id="logoNav">
-                <div id="logoTableFix">
-                    <a href="#">
-                        <img src="images/logo.svg" alt="logo van ZorgOrganisatie Netwerk">
-                        <h1>ZorgOrganisaties Netwerk</h1>
-                    </a>
-                </div>
-            </div>
-            <div id="paginas">
-                <ul>
-                    <li><a href="">wie zijn wij</a></li>
-                    <li><a href="">onze organisaties</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li class="hoogContrastKnop"><img src="images/logo hoog contrast.svg" alt="Hoog contrast knop"></li>
-                </ul>
-            </div>
-        </nav>
+       <!-- Navigatie-->
+			<nav>	
+				<!-- Logo en naam -->
+				<div id="logoNav">
+					<div id="logoTableFix">
+						<a href="homepage.html">
+							<img src="images/logo.svg" alt="logo van ZorgOrganisatie Netwerk">
+							<h1>ZorgOrganisaties Netwerk</h1>
+						</a>
+					</div>
+				</div>
+				<div id="paginas">		
+					<ul id="mobileNav">
+						<!-- Links naar pagina's-->
+						<li><a href="wie-zijn-wij.html">wie zijn wij</a></li>
+						<li class="huidigePagina"><a href="#" >onze organisaties</a></li>
+						<li><a href="FAQ.html">FAQ</a></li>
+					</ul>	
+					<!-- Hoogcontrastknop -->
+					<div class="hoogContrastKnop"><img src="images/logo hoog contrast.svg" alt="Hoog contrast knop"></div>
+					<!-- Mobile navigatie icoon -->
+					<div id="mobileMenuIcon" >
+						<div class="mobileIconLijn1"></div>
+						<div class="mobileIconLijn2"></div>
+						<div class="mobileIconLijn3"></div>
+					</div>
+				</div>
+			</nav>
     </header>
     <main class="grid">
         <figure id="logo"><img src="images/close-up-of-guinea-pig-eating-cucumber-on-floorboard-675608313-57fff1de5f9b5805c2b14e41.jpg" alt="logo" width=100%></figure>
@@ -89,5 +99,9 @@
             <div class="gmap_canvas"><iframe width="670" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=ehb&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de"></a></div>
         </div>
     </main>
+	<!-- Inladen van jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<!-- jQuery code voor responsieve navigatie -->
+	<script type="text/javascript" src="js/mobileNav.js"></script>
 </body>
 </html>
