@@ -47,8 +47,8 @@ function setOption(){
 	$(".arrowBtn>p").removeClass("filterTextAnimation");
 	// vermijden dat de filter menu open staat wanneer de pagina inlaad
 	if($(window).width() <= 1193){
-			$('.filter-container').toggle().removeClass('mobileFilterToggle');
-		};
+		$('.filter-container').toggle().removeClass('mobileFilterToggle');
+	};
 }
 
 console.log(begeleidingKeuze);
