@@ -11,11 +11,6 @@
 		<link rel="stylesheet" href="css/alleOrgs.css">
 		
 		<!-- Scripts -->
-		<script type="text/javascript" src="js/cookies.js"></script>
-		<script>
-			checkCookie();
-			setOption();
-		</script>
 	</head>
 	<body>
 		<header>
@@ -24,7 +19,7 @@
 				<!-- Logo en naam -->
 				<div id="logoNav">
 					<div id="logoTableFix">
-						<a href="homepage.html">
+						<a href="homepage.html" onClick="setAll()">
 							<img src="images/logo.svg" alt="logo van ZorgOrganisatie Netwerk">
 							<h1>ZorgOrganisaties Netwerk</h1>
 						</a>
@@ -33,9 +28,9 @@
 				<div id="paginas">		
 					<ul id="mobileNav">
 						<!-- Links naar pagina's-->
-						<li><a href="wie-zijn-wij.html">wie zijn wij</a></li>
-						<li class="huidigePagina"><a href="#" >onze organisaties</a></li>
-						<li><a href="FAQ.html">FAQ</a></li>
+						<li><a href="wie-zijn-wij.html" onClick="setAll()">wie zijn wij</a></li>
+						<li class="huidigePagina"><a href="#" onClick="setAll()">onze organisaties</a></li>
+						<li><a href="FAQ.html" onClick="setAll()">FAQ</a></li>
 					</ul>	
 					<!-- Hoogcontrastknop -->
 					<div class="hoogContrastKnop"><img src="images/logo hoog contrast.svg" alt="Hoog contrast knop"></div>
@@ -79,7 +74,7 @@
 						<option value="w-vlaanderen">West-Vlaanderen</option>
 					</select>
 					<!-- Bevestigings knop -->
-					<button id="filterBevestiging" >Filter Zoekresultaten <span>→</span></button>
+					<button id="filterBevestiging" onClick="filterCentra()">Filter Zoekresultaten <span>→</span></button>
 				</div>
 				<div id="mobileFilter">
 					<div class="arrowBtn"><p>Filter</p><img src="images/filterArrow.svg" alt="Pijl om filter menu te tonen"></div>
@@ -199,6 +194,10 @@
 			<script type="text/javascript" src="js/mobileNav.js"></script>
 			<!-- jQuery code voor filtering systeem van de organisaties -->
 			<script type="text/javascript" src="js/filter.js"></script>
-
+			<!-- Cookies script voor bijhouden keuze op homepage -->
+			<script type="text/javascript" src="js/cookies.js"></script>
+			<script>
+				setOption();
+			</script>
 	</body>
 </html>

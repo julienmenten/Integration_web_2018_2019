@@ -1,6 +1,11 @@
+
+//Globale variabelen
 var filterMenuDown = false;
 
-$("#filterBevestiging").click(function(){
+
+// Main Filter functie 
+
+function filterCentra(){
 	var begeleiding = $("#specFilter").val();
 	var regio = $("#regioFilter").val();
 	var leeftijd =$("#leeftijdFilter").val();
@@ -29,7 +34,7 @@ $("#filterBevestiging").click(function(){
 			$(".arrowBtn>img").toggleClass("arrowAnimation");
 			$(".arrowBtn>p").toggleClass("filterTextAnimation");
 		};
-});
+};
 /*
 Lijst van mogelijke waarden: 
 - begeleiding: 
@@ -52,7 +57,8 @@ Lijst van mogelijke waarden:
 	- v-brabant
 	- w-vlaanderen
 */
-// Sticky filter 
+
+// Sticky filter bar
 var num = 60; // Grootte van navigatie balk boven de filterbalk
 
 $(window).bind('scroll', function () {
