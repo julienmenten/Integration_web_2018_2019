@@ -46,7 +46,9 @@ function setOption(){
 	$(".arrowBtn>img").removeClass("arrowAnimation");
 	$(".arrowBtn>p").removeClass("filterTextAnimation");
 	// vermijden dat de filter menu open staat wanneer de pagina inlaad
-	$('.filter-container').toggle().removeClass('mobileFilterToggle');
+	if($(window).width() <= 1193){
+			$('.filter-container').toggle().removeClass('mobileFilterToggle');
+		};
 }
 
 console.log(begeleidingKeuze);
