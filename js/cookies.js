@@ -5,31 +5,29 @@
 
 var begeleidingKeuze = document.cookie;
 
-
-
 // Verklaren van keuze op de homepage
-function setVisueel(){
-	begeleidingKeuze = "visuelebegeleiding";
-	document.cookie = begeleidingKeuze;
-	alert(begeleidingKeuze);
-}
+	function setVisueel(){
+		begeleidingKeuze = "visueel";
+		document.cookie = begeleidingKeuze;
+	}
+	function setAudio(){
+		begeleidingKeuze = "auditief";
+		document.cookie = begeleidingKeuze;
+		cookie = document.cookie;
+	}
+	function setMotorisch(){
+		begeleidingKeuze = "motorische";
+		document.cookie =begeleidingKeuze ;
+		cookie = document.cookie;
+	}
 
-function setAudio(){
-	begeleidingKeuze = "auditievebegeleiding";
-	document.cookie = begeleidingKeuze;
-	cookie = document.cookie;
-	alert(begeleidingKeuze);
-}
-
-function setMotorisch(){
-	begeleidingKeuze = "motorischebegeleiding";
-	document.cookie =begeleidingKeuze ;
-	cookie = document.cookie;
-	alert(begeleidingKeuze);
-}
-
+// Controleren wat er in de cookie staat
 function checkCookie() {
 	alert(document.cookie);
+}
+
+function setOption(){
+	
 }
 
 console.log(begeleidingKeuze);

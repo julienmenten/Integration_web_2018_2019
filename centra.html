@@ -12,6 +12,9 @@
 		
 		<!-- Scripts -->
 		<script type="text/javascript" src="js/cookies.js"></script>
+		<script>
+			checkCookie();
+		</script>
 	</head>
 	<body>
 		<header>
@@ -49,7 +52,7 @@
 				<div class="filter-container" alt="Filterbalk voor centra's">
 					<!-- Filter voor specialisaties  -->
 					<select class="select-style" name="specialisaties" id="specFilter" alt="Kies een begeleiding">
-						<option value="all" selected>Specialisatie</option>
+						<option value="all" >Specialisatie</option>
 						<option value="all">Alle begeleidingen</option>
 						<option value="visueel">Visuele begeleiding</option>
 						<option value="auditief">Auditieve begeleiding</option>
@@ -57,7 +60,7 @@
 					</select>
 					<!-- Filter voor leeftijdscategorïen -->
 					<select class="select-style" name="leeftijdscategorie" id="leeftijdFilter" alt="Kies een leeftijdscategorie">
-						<option value="all"  selected>Leeftijdscategorie</option>
+						<option value="all">Leeftijdscategorie</option>
 						<option value="all">Alle leeftijdscategorïen</option>
 						<option value="kinderen">Kinderen</option>
 						<option value="jongeren">Jongeren</option>
@@ -65,7 +68,7 @@
 					</select>
 					<!-- Filter voor regio's  -->
 					<select class="select-style" name="regio" id="regioFilter" alt="Kies een regio">
-						<option value="all" selected>Regio</option>
+						<option value="all">Regio</option>
 						<option value="all">Alle regio's</option>
 						<option value="antwerpen">Antwerpen</option>
 						<option value="brussel">Brussel</option>
@@ -75,7 +78,7 @@
 						<option value="w-vlaanderen">West-Vlaanderen</option>
 					</select>
 					<!-- Bevestigings knop -->
-					<button id="filterBevestiging" onClick="checkCookie()">Filter Zoekresultaten <span>→</span></button>
+					<button id="filterBevestiging" >Filter Zoekresultaten <span>→</span></button>
 				</div>
 				<div id="mobileFilter">
 					<div class="arrowBtn"><p>Filter</p><img src="images/filterArrow.svg" alt="Pijl om filter menu te tonen"></div>
