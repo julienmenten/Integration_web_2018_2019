@@ -127,6 +127,8 @@ select::-ms-expand {
 }
 .org_titel{
 	grid-column: col 2 /span 10;
+    font-weight: 700;
+    padding-bottom: 5%;
 }
 
 /************************************
@@ -135,7 +137,40 @@ select::-ms-expand {
 #orgs_lijst {
 	grid-column: col 2/ span 10;
 }
-
+/*logos*/
+.organisatie figure{
+    width: 100%;
+    max-height: 100%;
+    padding:0;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+#st-ger{
+    background-image: url("../individuele_organisaties/logos_organisaties/Logo_SG_def_bsl_felrood%20(1).jpg");
+}
+#heder{
+    background-image: url("../individuele_organisaties/logos_organisaties/logo-heder.svg");
+}
+#kids{
+    background-image: url("../individuele_organisaties/logos_organisaties/KIDS+logo%20(1).jpg");
+}
+#st-gre{
+    background-image: url("../individuele_organisaties/logos_organisaties/Logo_250px_ZORG.jpg");
+}
+#oc{
+    background-image: url("../individuele_organisaties/logos_organisaties/logo-de_beweging.jpg");
+}
+#sperm{
+    background-image:url("../individuele_organisaties/logos_organisaties/Spermalie_Logo.jpg"); 
+}
+#gans{
+    background-image:url("../individuele_organisaties/logos_organisaties/logo%20ganspoel.svg"); 
+}
+.organisatie figure img{
+    width: 100%;
+}
+/**/
 .organisatie{
 	display: inline-flex;
 	width: 77%;
@@ -208,6 +243,7 @@ select::-ms-expand {
 	#orgs_lijst {
 		grid-column: col 1/ span 12;
 	}
+    
 }
 @media only screen and (max-width:892px){
 	#filter{	
@@ -284,15 +320,21 @@ select::-ms-expand {
 
 @media only screen and (max-width:731px){
 	.org_titel{
-		text-align: center;
+		text-align: left;
+        margin-bottom: 10%;
+        font-weight: 700;
+        padding-left: 4%;
+        grid-column: col 1/ span 12;
 	}
+    
 	.organisatie{
 		display: block;
 	}
-	.organisatie img{
-		width: 100%;
-		border-bottom: 2px solid #FF7B00;
-	}
+    .organisatie figure{
+        width: 50%;
+        height: 150px;
+        margin: auto;
+    }
 	.org_tekst{
 		display: block;
 		width: 92%;
