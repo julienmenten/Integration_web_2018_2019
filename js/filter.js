@@ -18,7 +18,7 @@ $("#filterBevestiging").click(function(){
 		$("div.organisatie").css("display", "inline-flex");	
 	};	
 	//Deze stuk code verbergd de ongewenste centra 
-	notFilter.css( "display", "none" );
+	notFilter.css( "display", "none");
 	// Eens je op bevestigen drukt, verdwijnt de mobiele filter blok
 	if($(window).width() <= 1193){
 		$('.filter-container').slideToggle().removeClass('mobileFilterToggle');

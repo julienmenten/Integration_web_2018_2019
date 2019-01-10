@@ -72,6 +72,17 @@ nav{
 	color: black;
 	padding: 0px 20px;
 }
+#paginas li a:active{
+	font-weight: 500;
+}
+#paginas li a:after {
+  display:block;
+  content: '';
+  border-bottom: solid 1px #FF7B00;  
+  transform: scaleX(0);  
+  transition: transform 300ms ease-in-out;
+}
+#paginas li a:hover:after { transform: scaleX(1); }
 .hoogContrastKnop{
 	margin-top: 15px;
 	width: 30px;
