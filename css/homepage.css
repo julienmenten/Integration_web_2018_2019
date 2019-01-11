@@ -8,14 +8,12 @@ body {
 /**************************
 *    foto's slideshow   *
 **************************/
-.fotoshome img {
+#fotoshome{
     width: 100%;
-}
-
-.slide img {
-    max-height: 100vh;
-    margin-bottom: 0;
-}
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;}
 
 /**************************
 *    Oranje balk met de 3 beperkingen.   *

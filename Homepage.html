@@ -44,34 +44,9 @@
     </header>
 
     <!-- slideshow images.  -->
-    <div class="fotoshome">
-        <img src="images/homepagebackground.jpg" class="slide" alt="vrouw helpt persoon">
-        <img src="images/adult-autumn-autumnal-712413-2.jpg" class="slide" alt="vrouw gooit bladeren tijdens herfst">
-        <img src="images/adults-affection-arms-around-1586481-2.jpg" class="slide" alt="man omhelst vrouw op heuvel">
-        <img src="images/baby-boy-child-67663-2.jpg" class="slide" alt="moeder omhelst baby">
-        
-   
-        
+    <div id="fotoshome">
     </div>
-    <script>
-        var slideIndex = 0;
-        carousel();
 
-        function carousel() { /*based on W3Schools: https://www.w3schools.com/w3css/w3css_slideshow.asp*/
-            var i;
-            var x = document.getElementsByClassName("slide");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > x.length) {
-                slideIndex = 1
-            }
-            x[slideIndex - 1].style.display = "block";
-            setTimeout(carousel, 6000); // Change image every 6 seconds
-        }
-
-    </script>
     <div class="backgroundhome">
         <!-- Oranje balk met de 3 beperkingen in. -->
         <div class="backgroundfilter">
@@ -106,7 +81,7 @@
     <script type="text/javascript" src="js/filter.js"></script>
 	<!-- Cookies script voor bijhouden keuze bij filter op centra pagina-->	
 	<script src="js/cookies.js" type="text/javascript"></script>
-	
+	<script src="js/carousel.js" type="text/javascript"></script>
 </body>
 
 </html>
