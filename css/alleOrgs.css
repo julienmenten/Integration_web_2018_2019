@@ -148,6 +148,7 @@ select::-ms-expand {
 /*logos*/
 .organisatie figure{
     width: 200px;
+	height: 200px;
     max-height: 100%;
     padding:0;
     background-position:center;
@@ -179,10 +180,18 @@ select::-ms-expand {
     width: inherit;
 }
 /**/
+
 .organisatie{
 	display: inline-flex;
 	width: 77%;
 	padding: 25px 0;
+}
+.orRight{
+	float: right;
+	background-color: green;
+}
+.orLeft{
+	background-color: red;
 }
 .organisatie:last-child{
 	
@@ -190,12 +199,19 @@ select::-ms-expand {
 .organisatie:nth-child(1){
 	padding-top: 60px;
 }
-.organisatie:nth-child(2n+0){
+.organisatie:nth-child(even){
 	float: right;
+}
+.showResult{
+	/*background-color: red;*/
+	/*float: left;*/
+}
+.showResult:nth-child(2n+0){
+	background-color: green;
+	/*float: right*/
 }
 .organisatie .org_buttons{
 	display: block;
-
 }
 
 .org_buttons{
@@ -248,11 +264,12 @@ select::-ms-expand {
 		margin-top: 0px;
 	}
 	#orgs_lijst {
-		grid-column: col 2/ span 11;
+		grid-column: col 2/ span 10;
 	}
 	.organisatie{
 		margin-bottom: 50px;
 		width: 100%;
+		
 	}
 	.organisatie:nth-child(2n+0){
 		float: left;
