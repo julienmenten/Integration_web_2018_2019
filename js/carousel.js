@@ -4,13 +4,13 @@ $(function() {
 var current = 0;
 
 function nextBackground() {
-  body.css(
-   'background-image',
-    backgrounds[current = ++current % backgrounds.length]
- );
+  	body.css(
+	   'background-image',
+		backgrounds[current = ++current % backgrounds.length]
+	 );
 
- setTimeout(nextBackground, 6000);
- }
- setTimeout(nextBackground, 6000);
-   body.css('background-image', backgrounds[0]);
+	 setTimeout(nextBackground, 6000);
+	 }
+	 setTimeout(nextBackground, 6000);
+	   body.css('background-image', backgrounds[0]);
  });

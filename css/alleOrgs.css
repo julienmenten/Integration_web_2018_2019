@@ -362,7 +362,7 @@ select::-ms-expand {
 		margin:auto;
 	}
 	.organisatie .org_buttons{
-		float: none;
+		float: both;
 		width: 100%;
 		display: inline-flex;
 		
