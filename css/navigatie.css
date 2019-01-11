@@ -111,7 +111,6 @@ nav{
 *		Media queries 		  *
 ******************************/
 @media only screen and (max-width:890px){
-	
 	#paginas ul{
 		display: none;
 		max-height: 500px;
@@ -162,8 +161,7 @@ nav{
 	  display:none;
 	}
 	.huidigePagina{
-		background-color: rgba(255, 229, 204, 0.6);
-		
+		background-color: rgba(255, 229, 204, 0.6);	
 	}
 }
 @media only screen and (max-width:680px){
