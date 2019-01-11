@@ -15,19 +15,6 @@ body {
     background-position: center;
     background-size: cover;
 }
-.slideOne{
-	background-image: url(../images/homepagebackground.jpg);
-}
-.slideTwo{
-	background-image: url(../images/homepagebackground2.jpg);
-}
-.slideThree{
-	background-image: url(../images/homepagebackground3.jpg);
-}
-.slideFour{
-	background-image: url(../images/homepagebackground4.jpg);
-}
-
 /**************************
 *    Oranje balk met de 3 beperkingen.   *
 **************************/
