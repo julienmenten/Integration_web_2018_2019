@@ -85,10 +85,10 @@ nav{
   transition: transform 300ms ease-in-out;
 }
 #paginas li a:hover:after { transform: scaleX(1); }
-.hoogContrastKnop{
+/*.hoogContrastKnop{
 	margin-top: 15px;
 	width: 30px;
-	margin-left: 40px;
+	margin-left: 40px;*/
 }
 #mobileMenuIcon{
 	display: none;
