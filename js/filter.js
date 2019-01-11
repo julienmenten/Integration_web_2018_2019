@@ -13,21 +13,24 @@ function filterCentra(){
 	//Bepalen van de filter dat getoond moet worden, en diegene dat moet verborgen worden
 	var filter = $(["class*='."+ begeleiding +"."+ leeftijd +"."+ regio +"'"]);	
 	var notFilter = $("div.organisatie:not("+"." + begeleiding +"."+ leeftijd +"."+ regio +")");
+	//var filterOdd = $("."+ begeleiding +"."+ leeftijd +"."+ regio + ":nth-child(odd)");	
+	//var filterEven = $("."+ begeleiding +"."+ leeftijd +"."+ regio + ":nth-child(even)");
+	//console.log(filterOdd, filterEven);
 	
-	// geen juiste criteria
-	
+	//var visFilterOdd = filterOdd.is(':visible');
+	//var visFilterEven = filterEven.is(':visible');
 		//Op kleine schermen moet de display block zijn, en op grote schermen inline-flex. Deze stuk code toont de gewenste centra 
+		$("div.organisatie").css("display", "inline-flex");
 		if(windowWidth <= 730){
-			$("div.organisatie").css("display", "block");
-			$("#geenCriteria").css("display", "none");
+			$("div.organisatie").css("display", "block");		
 		}
-		if(windowWidth > 730){
+		if(windowWidth > 730 && ".organisatie:visible" == true){
 			$("div.organisatie").css("display", "inline-flex");
-		
-			$("#geenCriteria").css("display", "none");
 		};	
+		
 		//Deze stuk code verbergd de ongewenste centra 
 		notFilter.css( "display", "none");
+		
 		// Eens je op bevestigen drukt, verdwijnt de mobiele filter blok
 		if($(window).width() <= 1193){
 			$('.filter-container').slideToggle().removeClass('mobileFilterToggle');
@@ -107,7 +110,6 @@ $(window).on('resize', function(){
 		$(".filter-container").removeClass('mobileFilterToggle');
 		$(".filter-container").css("display","block");
 	}
-	
 	// Vermijden van aanpassen van 'display' door het resizen van schermen, maar toch de 'display' mode dynamisch aanpassen tussen 'block' en 'inline-flex'
 	var begeleiding = $("#specFilter").val();
 	var regio = $("#regioFilter").val();
