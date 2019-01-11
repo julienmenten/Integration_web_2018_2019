@@ -38,8 +38,14 @@ function filterCentra(){
 
 function dropToList(){
 	// Wanneer je op zoeken drukt, word je naar de top van de lijst verplaatst 
-	var list = document.getElementById("orgs_lijst")
-	list.scrollIntoView({behavior:"smooth", block:"start"});
+	var list = document.getElementById("dropHere");
+	if($(window).width() <= 1193){
+	   list.scrollIntoView({behavior:"smooth", block:"center"});
+	}
+    if($(window).width() > 1193){
+	   list.scrollIntoView({behavior:"smooth", block:"start"});
+	};
+		
 };
 
 function clickToFilter(){
@@ -122,6 +128,3 @@ $(window).on('resize', function(){
 		$(".arrowBtn>p").removeClass("filterTextAnimation");
 	};
 });
-
-	
-

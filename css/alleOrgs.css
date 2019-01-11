@@ -129,6 +129,7 @@ select::-ms-expand {
 .org_titel{
 	grid-column: col 2 /span 10;
     font-weight: 700;
+	margin-top: 60px;
 }
 
 /************************************
