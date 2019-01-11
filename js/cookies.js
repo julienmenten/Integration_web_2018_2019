@@ -4,6 +4,7 @@
 // motorischebegeleiding
 
 var begeleidingKeuze = document.cookie;
+// Reminder: schrijf code om ervoor te zorgen dat er automatisch word gescrolled wanneer een bepaalde begeleiding optie is gekozen op home page, dit word wel gereset bij het surfen naar andere pagina
 
 // Verklaren van keuze op de homepage 
 if(begeleidingKeuze == ""){
@@ -24,7 +25,7 @@ if(begeleidingKeuze == ""){
 		document.cookie = begeleidingKeuze;
 	}
 // Resetten van cookie naar "all" opties 
-function setAll(){
+function resetCookie(){
 	//begeleidingKeuze = "all";
 	//document.cookie = begeleidingKeuze;
 }

@@ -2,7 +2,6 @@
 //Globale variabelen
 var filterMenuDown = false;
 
-
 // Main Filter functie 
 
 function filterCentra(){
@@ -34,8 +33,18 @@ function filterCentra(){
 			$(".arrowBtn>img").toggleClass("arrowAnimation");
 			$(".arrowBtn>p").toggleClass("filterTextAnimation");
 		};
-	// Wanneer je op zoeken drukt, word je naar de top van de lijst verplaatst 
 	
+};
+
+function dropToList(){
+	// Wanneer je op zoeken drukt, word je naar de top van de lijst verplaatst 
+	var list = document.getElementById("orgs_lijst")
+	list.scrollIntoView({behavior:"smooth", block:"start"});
+};
+
+function clickToFilter(){
+	filterCentra();
+	dropToList();
 };
 /*
 Lijst van mogelijke waarden: 

@@ -129,7 +129,6 @@ select::-ms-expand {
 .org_titel{
 	grid-column: col 2 /span 10;
     font-weight: 700;
-    padding-bottom: 5%;
 }
 
 /************************************
@@ -175,9 +174,14 @@ select::-ms-expand {
 .organisatie{
 	display: inline-flex;
 	width: 77%;
-	margin-bottom: 50px;
+	padding: 25px 0;
 }
-
+.organisatie:last-child{
+	
+}
+.organisatie:nth-child(1){
+	padding-top: 60px;
+}
 .organisatie:nth-child(2n+0){
 	float: right;
 }
