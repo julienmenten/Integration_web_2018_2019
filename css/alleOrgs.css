@@ -37,6 +37,9 @@ select:hover{
 	background-color: #F1F1F1;
 	transition: 0.2s;
 }
+selct:focus{
+    outline:0;
+}
 /************************************
 *	   Default style van selects    *
 *	verwijderen voor verschillende  *
