@@ -6,12 +6,12 @@ var current = 0;
 
 function nextBackground() {
   body.css(
-   'background',
+   'background-image',
     backgrounds[current = ++current % backgrounds.length]
  );
 
  setTimeout(nextBackground, 5000);
  }
  setTimeout(nextBackground, 5000);
-   body.css('background', backgrounds[0]);
+   body.css('background-image', backgrounds[0]);
  });
