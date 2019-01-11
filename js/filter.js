@@ -23,6 +23,7 @@ function filterCentra(){
 		}
 		if(windowWidth > 730){
 			$("div.organisatie").css("display", "inline-flex");
+		
 			$("#geenCriteria").css("display", "none");
 		};	
 		//Deze stuk code verbergd de ongewenste centra 
