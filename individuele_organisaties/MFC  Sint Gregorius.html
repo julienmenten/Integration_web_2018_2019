@@ -8,34 +8,34 @@
 
 <body>
     <header>
-        <!-- Navigatie-->
-        <nav>
-            <!-- Logo en naam -->
-            <div id="logoNav">
-                <div id="logoTableFix">
-                    <a href="../Homepage.html">
-                        <img src="../images/logo.svg" alt="logo van ZorgOrganisatie Netwerk">
-                        <h1>ZorgOrganisaties Netwerk</h1>
-                    </a>
-                </div>
-            </div>
-            <div id="paginas">
-                <ul id="mobileNav">
-                    <!-- Links naar pagina's-->
-                    <li><a href="../wie-zijn-wij.html">wie zijn wij</a></li>
-                    <li><a href="../centra.html">onze organisaties</a></li>
-                    <li><a href="../FAQ.html">FAQ</a></li>
-                </ul>
-                <!-- Hoogcontrastknop -->
-                <div class="hoogContrastKnop"><img src="../images/logo hoog contrast.svg" alt="Hoog contrast knop"></div>
-                <!-- Mobile navigatie icoon -->
-                <div id="mobileMenuIcon">
-                    <div class="mobileIconLijn1"></div>
-                    <div class="mobileIconLijn2"></div>
-                    <div class="mobileIconLijn3"></div>
-                </div>
-            </div>
-        </nav>
+       <!-- Navigatie-->
+			<nav>	
+				<!-- Logo en naam -->
+				<div id="logoNav">
+					<div id="logoTableFix">
+						<a href="../homepage.html" onClick="setAll()">
+							<img src="../images/logo.svg" alt="logo van ZorgOrganisatie Netwerk">
+							<h1>ZorgOrganisaties Netwerk</h1>
+						</a>
+					</div>
+				</div>
+				<div id="paginas">		
+					<ul id="mobileNav">
+						<!-- Links naar pagina's-->
+						<li><a href="../wie-zijn-wij.html" onClick="setAll()">wie zijn wij</a></li>
+						<li><a href="../centra.html" onClick="setAll()">onze organisaties</a></li>
+						<li><a href="../FAQ.html" onClick="setAll()">FAQ</a></li>
+					</ul>	
+					<!-- Hoogcontrastknop -->
+					<div class="hoogContrastKnop"><img src="../images/logo hoog contrast.svg" alt="Hoog contrast knop"></div>
+					<!-- Mobile navigatie icoon -->
+					<div id="mobileMenuIcon" >
+						<div class="mobileIconLijn1"></div>
+						<div class="mobileIconLijn2"></div>
+						<div class="mobileIconLijn3"></div>
+					</div>
+				</div>
+			</nav>
     </header>
 
     <main class="grid">
@@ -108,5 +108,9 @@
       <footer>
       <img src="../images/logoschool.jpg" alt="schoollogo" class="schoollogo">
   </footer>
+	<!-- Inladen van jQuery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<!-- jQuery code voor responsieve navigatie -->
+	<script type="text/javascript" src="../js/mobileNav.js"></script>
 </body>
 </html>
