@@ -3,6 +3,7 @@ footer{
     background-color: #FF7B00;
     height:30px;
     position:relative;
+    overflow: hidden;
 }
 
 body{
@@ -18,4 +19,8 @@ main{
     width:60px;
     max-height:30px;
     margin-left: 10px;
+}
+
+body{
+    min-height: 100vh;
 }
