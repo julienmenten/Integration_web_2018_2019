@@ -15,10 +15,15 @@ function filterCentra(){
 	var notFilter = $("div.organisatie:not("+"." + begeleiding +"."+ leeftijd +"."+ regio +")");
 	//var filterOdd = $("."+ begeleiding +"."+ leeftijd +"."+ regio + ":nth-child(odd)");	
 	//var filterEven = $("."+ begeleiding +"."+ leeftijd +"."+ regio + ":nth-child(even)");
-	//console.log(filterOdd, filterEven);
+	var checkDisplay = $(".organisatie").css("display") == "none";
 	
-	//var visFilterOdd = filterOdd.is(':visible');
-	//var visFilterEven = filterEven.is(':visible');
+	if(!checkDisplay){
+		$("div.organisatie:visible:nth-child(even)").css("float", "right");
+		$("div.organisatie:visible:nth-child(odd)").css("float", "left");
+	}
+	if(checkDisplay){
+		$("div.organisatie:hidden").css("float", "none");
+	}
 		//Op kleine schermen moet de display block zijn, en op grote schermen inline-flex. Deze stuk code toont de gewenste centra 
 		$("div.organisatie").css("display", "inline-flex");
 		if(windowWidth <= 730){

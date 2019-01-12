@@ -200,32 +200,17 @@ option:hover{
 .orLeft{
 	background-color: red;
 }
-.organisatie:last-child{
-	
-}
+
 .organisatie:nth-child(1){
 	padding-top: 60px;
-}
-.organisatie:nth-child(even){
-	float: right;
-}
-.showResult{
-	/*background-color: red;*/
-	/*float: left;*/
-}
-.showResult:nth-child(2n+0){
-	background-color: green;
-	/*float: right*/
 }
 .organisatie .org_buttons{
 	display: block;
 }
-
 .org_buttons{
 	vertical-align: top;
 	width: 100%;
 }
-
 .org_buttons a{
 	text-decoration: none;
 	color: white;
