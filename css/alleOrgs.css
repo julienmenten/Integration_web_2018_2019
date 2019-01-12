@@ -25,21 +25,23 @@ select{
 	border:3px double #FF7B00;
 	width: 280px;
 	margin: 0px 10px;
-	background-color: white;
+	background-color: #fff;
 	background-image: url('../images/downArrow.svg');
 	background-size: 29px;
 	background-repeat: no-repeat;
 	background-position: 100.3%;
 	cursor: pointer;
 	transition: 0.2s;
+    overflow: auto;
 }
 select:hover{
 	background-color: #F1F1F1;
 	transition: 0.2s;
 }
-selct:focus{
+select:focus{
     outline:0;
 }
+
 /************************************
 *	   Default style van selects    *
 *	verwijderen voor verschillende  *
@@ -55,6 +57,11 @@ select {
 select::-ms-expand {
   display: none;
 }
+option:hover{
+    background: #ff7b00;
+    
+}
+
 /***********************
 * Confirm button style *
 ***********************/
@@ -193,32 +200,17 @@ select::-ms-expand {
 .orLeft{
 	background-color: red;
 }
-.organisatie:last-child{
-	
-}
+
 .organisatie:nth-child(1){
 	padding-top: 60px;
-}
-.organisatie:nth-child(even){
-	float: right;
-}
-.showResult{
-	/*background-color: red;*/
-	/*float: left;*/
-}
-.showResult:nth-child(2n+0){
-	background-color: green;
-	/*float: right*/
 }
 .organisatie .org_buttons{
 	display: block;
 }
-
 .org_buttons{
 	vertical-align: top;
 	width: 100%;
 }
-
 .org_buttons a{
 	text-decoration: none;
 	color: white;

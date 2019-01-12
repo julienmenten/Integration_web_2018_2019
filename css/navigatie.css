@@ -1,4 +1,3 @@
-@import "general.css";
 body{
 	/*Zorgt ervoor dat er geen witte randen zitten aan de kant van de website*/
 	margin: 0;
@@ -85,11 +84,11 @@ nav{
   transition: transform 300ms ease-in-out;
 }
 #paginas li a:hover:after { transform: scaleX(1); }
-.hoogContrastKnop{
+/*.hoogContrastKnop{
 	margin-top: 15px;
 	width: 30px;
 	margin-left: 40px;
-}
+}*/
 #mobileMenuIcon{
 	display: none;
 }
@@ -113,7 +112,7 @@ nav{
 @media only screen and (max-width:890px){
 	#paginas ul{
 		display: none;
-		max-height: 500px;
+		max-height: none;
 		margin-top: 15px;
 	}
 	#mobileMenuIcon{
@@ -135,30 +134,24 @@ nav{
 		top: 45px;
 		left: 0;
 		overflow: hidden;
-		height: 180px;
-		border-bottom: 2px solid white;
+	
 	}
 	#mobileNav li{
 		display: block;
 		text-align: center;
-		padding: 20px 0px;
 		width: 100%;
 	}
 	#paginas ul li a{
-		padding: 20px 50px;
+		padding: 20px 0px;
+		display: block;
 		border-bottom: 2px solid white;
 		color: white;
-		width: 100%;
-
-	}
-	#paginas ul:nth-child(3) a{
-		padding-bottom: 0px;
-	}
-	.hoogContrastKnop{
-		margin-left: 10px;
 	}
 	#paginas li a:after {
 	  display:none;
+	}
+	.hoogContrastKnop{
+		margin-left: 10px;
 	}
 	.huidigePagina{
 		background-color: rgba(255, 229, 204, 0.6);	

@@ -160,7 +160,7 @@ place on grid
     }
 
     #logo {
-        grid-column: col 6/ span 2;
+        grid-column: col 5/ span 4;
         grid-row: row;
         margin: 0;
     }

@@ -43,7 +43,7 @@ function setOption(){
 	// De gekozen specialeit vanop de homepage kiezen in de select element
 	document.getElementById('specFilter').value = begeleidingKeuze;
 	//Direct opzoeken naar gekozen specialiteit
-	//filterCentra();
+	filterCentra();
 	// Fix voor filterpijl dat fout afgebeeld word (omgekeerd)
 	$(".arrowBtn>img").removeClass("arrowAnimation");
 	$(".arrowBtn>p").removeClass("filterTextAnimation");
