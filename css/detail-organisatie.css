@@ -28,6 +28,7 @@ logo
 ******************/
 #logo {
     padding: 0;
+	margin-left: auto;
 }
 
 /*****************
@@ -113,7 +114,7 @@ place on grid
     }
 
     #logo {
-        grid-column: col 2/ span 4;
+        grid-column: col / span 4;
         grid-row: row;
     }
 
@@ -160,15 +161,18 @@ place on grid
     }
 
     #logo {
-        grid-column: col 5/ span 4;
+        grid-column: col / span 12;
         grid-row: row;
-        margin: 0;
+		margin: 5% auto;
+		width: 50%;
+		
     }
 
     .mapouter {
         grid-column: col / span 12;
         grid-row: row 3;
         margin-top: 3%;
+		width: 100%;
     }
 
     #slideshow {
