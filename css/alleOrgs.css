@@ -1,6 +1,5 @@
 @import "navigatie.css";
 @import "general.css";
-
 #filter{
 	width: 100%;
 	height: 60px;
@@ -13,7 +12,6 @@
 	margin: auto;
 	text-align: center;	
 }
-
 /**************************
 *    Style voor selects   *
 **************************/
@@ -41,7 +39,6 @@ select:hover{
 select:focus{
     outline:0;
 }
-
 /************************************
 *	   Default style van selects    *
 *	verwijderen voor verschillende  *
@@ -58,10 +55,8 @@ select::-ms-expand {
   display: none;
 }
 option:hover{
-    background: #ff7b00;
-    
+    background: #ff7b00;   
 }
-
 /***********************
 * Confirm button style *
 ***********************/
@@ -75,8 +70,7 @@ option:hover{
 #filterBevestiging:hover{ 
 	background-color:#ffe5cc;
 	cursor: pointer;
-	transition: 0.2s;
-    
+	transition: 0.2s;    
 }
 #filterBevestiging:hover span{ 
 	padding-left: 50px;
@@ -145,7 +139,6 @@ option:hover{
     font-weight: 700;
 	margin-top: 60px;
 }
-
 /************************************
 * Style voor lijst van organisaties *
 ************************************/
@@ -186,8 +179,6 @@ option:hover{
 .organisatie figure img{
     width: inherit;
 }
-/**/
-
 .organisatie{
 	display: inline-flex;
 	width: 77%;
@@ -200,7 +191,6 @@ option:hover{
 .orLeft{
 	background-color: red;
 }
-
 .organisatie:nth-child(1){
 	padding-top: 60px;
 }
@@ -225,7 +215,6 @@ option:hover{
 	background-color: #FFC181;
 	transition: 0.2s;
 }
-
 .org_buttons span{
 	padding-left: 10px;
 	vertical-align: 1px;
@@ -247,7 +236,6 @@ option:hover{
 	grid-column: col 1 /span 12;
 	text-align: center;
 }
-
 /******************************
 *		Media queries 		  *
 ******************************/
@@ -260,19 +248,16 @@ option:hover{
 	}
 	.organisatie{
 		margin-bottom: 50px;
-		width: 100%;
-		
+		width: 100%;	
 	}
 	.organisatie:nth-child(2n+0){
 		float: left;
 	}
-	
 }
 @media only screen and (max-width:880px){
 	#orgs_lijst {
 		grid-column: col 1/ span 12;
 	}
-    
 }
 @media only screen and (max-width:892px){
 	#filter{	
@@ -337,7 +322,6 @@ option:hover{
 		transition: 0.4s;
 	}
 }
-
 @media only screen and (max-width:1080px){
 	.orgs_banner_tekst p{
 		width: 70%;	
@@ -346,7 +330,6 @@ option:hover{
 		float: left;
 	}
 }
-
 @media only screen and (max-width:731px){
 	.org_titel{
 		text-align: left;
@@ -354,8 +337,7 @@ option:hover{
         font-weight: 700;
         padding-left: 4%;
         grid-column: col 1/ span 12;
-	}
-    
+	} 
 	.organisatie{
 		display: block;
 	}
@@ -376,8 +358,7 @@ option:hover{
 	.organisatie .org_buttons{
 		float: both;
 		width: 100%;
-		display: inline-flex;
-		
+		display: inline-flex;		
 	}
 	.org_buttons a{
 		margin: 10px 10px;
@@ -391,7 +372,6 @@ option:hover{
 		display: none;
 	}
 }
-
 @media only screen and (max-width:680px){
 	.orgs_banner_tekst h2{
 		padding: 25px 0px;
