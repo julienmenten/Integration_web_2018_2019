@@ -110,6 +110,7 @@ place on grid
     #info {
         grid-column: col 6/ span 7;
         grid-row: row;
+
     }
 
     td {
@@ -130,7 +131,7 @@ place on grid
     #slideshow {
         grid-column: col 2 / span 10;
         grid-row: row 3;
-        margin-top: -5%;
+        margin-top: 5%;
     }
 
     #map-desktop {
@@ -155,7 +156,7 @@ place on grid
     #info {
         grid-column: col / span 12;
         grid-row: row 2;
-        padding: 2% 15% 0 15%;
+        padding: 2% 10px 0px;
 
     }
 
