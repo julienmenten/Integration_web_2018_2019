@@ -200,6 +200,7 @@ option:hover{
 .org_buttons{
 	vertical-align: top;
 	width: 100%;
+	cursor: pointer;
 }
 .org_buttons a{
 	text-decoration: none;
@@ -210,10 +211,12 @@ option:hover{
 	margin-right: 30px;
 	padding: 3px 10px;
 	transition: 0.2s;
+	
 }
 .org_buttons a:hover{
 	background-color: #FFC181;
 	transition: 0.2s;
+	cursor: pointer;
 }
 .org_buttons span{
 	padding-left: 10px;
