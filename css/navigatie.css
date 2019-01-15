@@ -1,4 +1,3 @@
-@import "general.css";
 body{
 	/*Zorgt ervoor dat er geen witte randen zitten aan de kant van de website*/
 	margin: 0;
@@ -62,6 +61,7 @@ nav{
 	list-style-type: none;
 	padding: 0;
 	max-height: 60px;
+	margin-top: 20px;
 }
 #paginas li{
 	display: inline-block;
@@ -71,12 +71,24 @@ nav{
 	text-decoration: none;
 	color: black;
 	padding: 0px 20px;
+	
 }
-.hoogContrastKnop{
+.huidigePagina a{
+	font-weight: 700;
+}
+#paginas li a:after {
+  display:block;
+  content: '';
+  border-bottom: solid 1px #FF7B00;  
+  transform: scaleX(0);  
+  transition: transform 300ms ease-in-out;
+}
+#paginas li a:hover:after { transform: scaleX(1); }
+/*.hoogContrastKnop{
 	margin-top: 15px;
 	width: 30px;
 	margin-left: 40px;
-}
+}*/
 #mobileMenuIcon{
 	display: none;
 }
@@ -98,10 +110,10 @@ nav{
 *		Media queries 		  *
 ******************************/
 @media only screen and (max-width:890px){
-	
 	#paginas ul{
 		display: none;
-		max-height: 500px;
+		max-height: none;
+		margin-top: 15px;
 	}
 	#mobileMenuIcon{
 		display: block;
@@ -115,7 +127,6 @@ nav{
 		border-radius: 50px;
 		transition: 0.3s;
 	}
-	
 	#mobileNav{
 		position: absolute;
 		background-color: rgba(255, 123, 0, 1);
@@ -123,37 +134,31 @@ nav{
 		top: 45px;
 		left: 0;
 		overflow: hidden;
-		height: 180px;
-		border-bottom: 2px solid white;
 	}
 	#mobileNav li{
 		display: block;
 		text-align: center;
-		padding: 20px 0px;
 		width: 100%;
 	}
 	#paginas ul li a{
-		padding: 20px 50px;
+		padding: 20px 0px;
+		display: block;
 		border-bottom: 2px solid white;
 		color: white;
-		width: 100%;
 	}
-	#paginas ul:nth-child(3) a{
-		padding-bottom: 0px;
+	#paginas li a:after {
+	  display:none;
 	}
-	
 	.hoogContrastKnop{
 		margin-left: 10px;
+	}
+	.huidigePagina{
+		background-color: rgba(255, 229, 204, 0.6);	
 	}
 }
 @media only screen and (max-width:680px){
 	#logoNav h1{
 		font-size: 0.8em;
 		padding: 0 0 0 10px;
-	}
-}
-@media only screen and (max-width: 360px){
-	#logoNav h1{
-		display: none;
 	}
 }
