@@ -112,6 +112,20 @@ h2 {
     display: none;
     position: relative;
 }
+
+#accordion6:checked ~ .single-text {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    margin-bottom: 0;
+	height: auto;
+}
+
+#accordion6 {
+    display: none;
+    position: relative;
+}
+
 .accordion{
 	transition: 0.2s ease;
 }
