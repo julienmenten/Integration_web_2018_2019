@@ -156,6 +156,9 @@ option:hover{
     background-repeat: no-repeat;
     background-size:contain;
 }
+main{
+    margin-bottom: 4%;
+}
 #st-ger{
     background-image: url("../individuele_organisaties/logos_organisaties/Logo_SG_def_bsl_felrood%20(1).jpg");
 }
