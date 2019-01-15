@@ -29,6 +29,12 @@ select{
 	background-size: 29px;
 	background-repeat: no-repeat;
 	background-position: 100.3%;
+	cursor: pointer;
+	transition: 0.2s;
+}
+select:hover{
+	background-color: #F1F1F1;
+	transition: 0.2s;
 }
 /************************************
 *	   Default style van selects    *
@@ -53,11 +59,32 @@ select::-ms-expand {
 	border: 3px double #FF7B00;
 	padding: 6px 5px;
 	width: 280px;
-	margin: 0 10px;
+	transition: 0.2s;
+}
+#filterBevestiging:hover{ 
+	background-color:#ffe5cc;
+	cursor: pointer;
+	transition: 0.2s;
+}
+#filterBevestiging:active{ 
+	background-color:#FF7B00;
+	cursor: pointer;
+	transition: 0.2s;
 }
 #filterBevestiging span{
 	padding-left: 30px;
 	vertical-align: 1px;
+}
+/****************************
+*  Mobiele navigatie style  *
+****************************/
+.sticky{
+	position: fixed;
+	top: 0;
+	transition: 0.3s;
+}
+#mobileFilter{
+	display: none;
 }
 /*******************************
 * Intro banner met tekst style *
@@ -173,10 +200,36 @@ select::-ms-expand {
 		height: auto;	
 	}
 	.select-style{
-		margin: 10px;
+		margin-top: 10px;
 	}
 	#filterBevestiging{
-		margin-bottom: 10px;
+		margin:10px;
+	}
+}
+@media only screen and (max-width:1193px){
+/****************************
+*  Mobiele navigatie style  *
+****************************/
+	.mobileFilterToggle{
+		width: 100%;
+		display: block;
+	}
+	#mobileFilter{
+		display: inline-block;
+		width: 100%;
+	}
+	.filter-container{
+		display: none;
+	}
+	.arrowBtn{
+		text-align: center;
+		vertical-align: middle
+	}
+	#filter{
+		display: block;
+		height: auto;
+	}
+	#filterBevestiging{
 		margin-top: 10px;
 	}
 }
@@ -194,7 +247,6 @@ select::-ms-expand {
 	.org_titel{
 		text-align: center;
 	}
-
 	.organisatie{
 		display: block;
 	}
@@ -220,7 +272,7 @@ select::-ms-expand {
 }
 @media only screen and (max-width:444px){
 	.select-style{
-		width: 100%;
+		width: 98%;
 		margin-left: 0px;
 		margin-right: 0px;
 	}

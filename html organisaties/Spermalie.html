@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>detail-organisatie-template</title>
+    <link rel="stylesheet" type="text/css" href="../css/general.css">
+    <link rel="stylesheet" type="text/css" href="../css/detail-organisatie-template.css">
+    <link rel="stylesheet" type="text/css" href="../footer.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navigatie-->
+        <nav>
+            <!-- Logo en naam -->
+            <div id="logoNav">
+                <div id="logoTableFix">
+                    <a href="../Homepage.html">
+                        <img src="../images/logo.svg" alt="logo van ZorgOrganisatie Netwerk">
+                        <h1>ZorgOrganisaties Netwerk</h1>
+                    </a>
+                </div>
+            </div>
+            <div id="paginas">
+                <ul id="mobileNav">
+                    <!-- Links naar pagina's-->
+                    <li><a href="../wie-zijn-wij.html">wie zijn wij</a></li>
+                    <li><a href="../centra.html">onze organisaties</a></li>
+                    <li><a href="../FAQ.html">FAQ</a></li>
+                </ul>
+                <!-- Hoogcontrastknop -->
+                <div class="hoogContrastKnop"><img src="../images/logo hoog contrast.svg" alt="Hoog contrast knop"></div>
+                <!-- Mobile navigatie icoon -->
+                <div id="mobileMenuIcon">
+                    <div class="mobileIconLijn1"></div>
+                    <div class="mobileIconLijn2"></div>
+                    <div class="mobileIconLijn3"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="grid">
+        <figure id="logo"><img src="../images_organisaties/Spermalie_Logo.jpg" alt="logo" width="90%">
+            <style>
+                #logo {
+                    margin-top: 30%;
+                }
+
+            </style>
+        </figure>
+        <div id="slideshow">
+            <script>
+                var slideIndex = 0;
+                carousel();
+
+                function carousel() { /*based on W3Schools: https://www.w3schools.com/w3css/w3css_slideshow.asp*/
+                    var i;
+                    var x = document.getElementsByClassName("slide");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > x.length) {
+                        slideIndex = 1
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                    setTimeout(carousel, 5000); // Change image every 5 seconds
+                }
+
+            </script>
+        </div>
+        <div id="info">
+            <h6>Spermalie
+            </h6>
+            <table>
+                <tr>
+                    <td>begeleiding voor:</td>
+                    <td>visuele beperking, auditieve beperking of ernstige moeilijkheid met de taal- of spraakontwikkeling.</td>
+                </tr>
+                <tr>
+                    <td>leeftijd:</td>
+                    <td>onderwijs: baby's en peuters.
+                        Onderwijs en zorg: kleuters, kinderen op lagere - en secundaire schoolleeftijd. en Zorg voor volwassenen.
+                    </td>
+                </tr>
+                <tr>
+                    <td>website:</td>
+                    <td><a href="http://www.de-kade.org">
+                            www.de-kade.org</a></td>
+                </tr>
+                <tr>
+                    <td>e-mail:</td>
+                    <td><a href="mailto: bc-spermalie@de-kade.be">
+                            bc-spermalie@de-kade.be</a></td>
+                </tr>
+                <tr>
+                    <td>tel.:</td>
+                    <td><a href="tel:050 340 341">050 340 341</a></td>
+                </tr>
+                <tr>
+                    <td>adres:</td>
+                    <td>Snaggaardstraat 9,<br>8000 Brugge</td>
+                </tr>
+            </table>
+        </div>
+        <div class="mapouter" id="map-desktop">
+            <div class="gmap_canvas"><iframe width="600" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Snaggaardstraat%209&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
+            <style>
+                .mapouter {
+                    text-align: right;
+                    height: 500px;
+                    width: 600px;
+                }
+
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 500px;
+                    width: 600px;
+                }
+
+            </style>
+        </div>
+        <div class="mapouter" id="map-tablet">
+            <div class="gmap_canvas"><iframe width="1000" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Snaggaardstraat%209&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
+            <style>
+                .mapouter {
+                    text-align: right;
+                    height: 500px;
+                    width: 600px;
+                }
+
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 500px;
+                    width: 600px;
+                }
+
+            </style>
+        </div>
+        <div class="mapouter" id="map-mobile">
+            <div class="gmap_canvas"><iframe width="670" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Snaggaardstraat%209&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">embedgooglemap.net</a></div>
+            <style>
+                .mapouter {
+                    text-align: right;
+                    height: 500px;
+                    width: 600px;
+                }
+
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 500px;
+                    width: 600px;
+                }
+
+            </style>
+        </div>
+    </main>
+    <footer>
+        <img src="../images/logoschool.jpg" alt="schoollogo" class="schoollogo">
+    </footer>
+</body>
+
+</html>
