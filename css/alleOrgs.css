@@ -117,7 +117,8 @@ option:hover{
 	margin-top: 50px;
 }
 .orgs_banner_tekst{
-	background-color: rgba(255,255,255,0.80);	
+	background-color: rgba(255,255,255,0.80);
+	width: 100%;
 }
 .orgs_banner_tekst h2{
 	margin: auto;
@@ -131,8 +132,8 @@ option:hover{
 	width: 50%;
 	margin: auto;
 	font-size: 14px;
-	text-align: justify;
 	padding-bottom: 30px;
+	text-align: center;
 }
 .org_titel{
 	grid-column: col 2 /span 10;
