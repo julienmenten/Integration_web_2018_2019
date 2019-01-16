@@ -36,9 +36,7 @@ select:hover{
 	background-color: #F1F1F1;
 	transition: 0.2s;
 }
-select:focus{
-    outline:0;
-}
+
 /************************************
 *	   Default style van selects    *
 *	verwijderen voor verschillende  *
@@ -76,9 +74,7 @@ option:hover{
 	padding-left: 50px;
 	transition: 0.2s;
 }
-#filterBevestiging:focus{
-    outline:0;
-}
+
 #filterBevestiging:active{ 
 	background-color:#FF7B00;
 	cursor: pointer;
